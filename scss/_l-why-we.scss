@@ -1,3 +1,75 @@
 .why-we {
+  margin: 35px 0 98px;
 
+  &__title {
+    margin: 0 0 48px;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #7a7991;
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 1428px;
+    margin: 0 auto;
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 calc(100% / 4 - 10px / 4 * 3);
+    max-width: calc(100% / 4 - 10px / 4 * 3);
+    padding: 96px 20px 25px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #f7f7f7;
+
+    @include laptop {
+      flex: 0 0 calc(100% / 2 - 10px / 2);
+      max-width: calc(100% / 2 - 10px / 2);
+    }
+
+    @include mobile {
+      flex: 1 1 100%;
+      max-width: none;
+    }
+
+    &-title {
+      margin: 0 0 13px;
+      font-weight: 800;
+      font-size: 19px;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: #151629;
+    }
+
+    &-description {
+      margin: 0;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+      color: #000;
+    }
+
+    &-icon {
+      position: absolute;
+      top: -46px;
+      left: -13px;
+      margin: 0;
+
+      &-image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+    }
+  }
 }

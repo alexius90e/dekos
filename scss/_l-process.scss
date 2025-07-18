@@ -1,3 +1,131 @@
 .process {
+  padding: 35px 0 0;
+  background-color: #151629;
 
+  &__title {
+    margin: 0 0 43px;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #7a7991;
+  }
+
+  &__steps {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 0 64px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 70px;
+      left: 50%;
+      bottom: 0px;
+      display: inline-block;
+      border-left: 2px dashed rgba($color: #ffffff, $alpha: 1.0);
+      transform: translateX(-50%);
+
+      @include tablet {
+        border-color: rgba($color: #ffffff, $alpha: 0.2);
+      }
+    }
+  }
+
+  &__step {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    @include tablet {
+      flex-wrap: wrap;
+    }
+
+    &:nth-child(odd) {
+      justify-content: flex-end;
+    }
+
+    &:nth-child(even) {
+      justify-content: flex-start;
+    }
+
+    &-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 auto;
+      width: 140px;
+      margin: 0;
+
+      @include tablet {
+        flex: 1 1 100%;
+      }
+
+      &-image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    &:nth-child(odd) &-icon {
+      order: 0;
+    }
+
+    &:nth-child(even) &-icon {
+      order: 1;
+    }
+
+    &-details {
+      flex: 0 0 calc(50% - 94px);
+
+      @include tablet {
+        flex: 1 1 100%;
+      }
+
+      &-title {
+        margin: 0 0 11px;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: #fff;
+      }
+
+      &-description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 125%;
+        color: #fff;
+      }
+    }
+
+    &:nth-child(odd) &-details {
+      order: 1;
+      text-align: left;
+
+      @include tablet {
+        order: 1;
+        text-align: center;
+      }
+    }
+
+    &:nth-child(even) &-details {
+      order: 0;
+      text-align: right;
+
+      @include tablet {
+        order: 1;
+        text-align: center;
+      }
+    }
+  }
 }

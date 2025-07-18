@@ -8,6 +8,15 @@ if (firstScreenSwiperEl) {
     pagination: {
       el: '.swiper-pagination',
     },
-    effect: 'coverflow',
+  });
+}
+
+const gallerySwiperEl = document.querySelector('.gallery .swiper');
+
+if (gallerySwiperEl) {
+  const swiper = new Swiper(gallerySwiperEl, {
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+    loop: true,
   });
 }

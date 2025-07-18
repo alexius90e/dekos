@@ -418,7 +418,7 @@ textarea {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 10px;
+  gap: 40px 10px;
   max-width: 1428px;
   margin: 0 auto;
 }
@@ -483,4 +483,30 @@ textarea {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
+}
+
+.gallery {
+  padding: 38px 0 35px;
+  background-color: #151629;
+}
+.gallery__title {
+  margin: 0 0 44px;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #7a7991;
+}
+.gallery__slider .swiper-slide {
+  width: auto;
+}
+.gallery__slide {
+  margin: 0;
+}
+.gallery__slide-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }

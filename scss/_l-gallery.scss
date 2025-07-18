@@ -1,4 +1,33 @@
 .gallery {
+  padding: 38px 0 35px;
+  background-color: #151629;
 
+  &__title {
+    margin: 0 0 44px;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #7a7991;
+  }
 
+  &__slider {
+    & .swiper {
+      &-slide {
+        width: auto;
+      }
+    }
+  }
+
+  &__slide {
+    margin: 0;
+
+    &-image {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
 }

@@ -1,2 +1,189 @@
 .certificates {
+  &__wrapper {
+    max-width: 1284px;
+    margin: 0 auto;
+  }
+
+  &__info {
+    padding: 41px 48px 62px;
+    border-radius: 10px;
+    background-color: #151629;
+
+    @include tablet {
+      padding: 48px 24px 56px;
+    }
+
+    &-logo {
+      margin: 0 0 30px;
+
+      &-image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        filter: brightness(0%) invert(100%);
+
+        @include tablet {
+          width: 240px;
+        }
+      }
+    }
+
+    &-title {
+      position: relative;
+      z-index: 10;
+      margin: 0 0 95px;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 150%;
+      text-transform: uppercase;
+      color: #fff;
+
+      @include tablet {
+        margin-bottom: 56px;
+        font-size: 18px;
+      }
+    }
+
+    &-description {
+      position: relative;
+      z-index: 10;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 150%;
+      text-transform: uppercase;
+      color: #7a7991;
+
+      @include tablet {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__slider {
+    margin: -90px 0 0;
+
+    @include desktop {
+      margin-top: -40px;
+    }
+
+    @include tablet {
+      margin: 20px 0 0;
+    }
+
+    & .swiper {
+      &-button {
+        &-prev,
+        &-next {
+          position: static;
+          display: block;
+          width: 21px;
+          height: 21px;
+          margin: 0;
+          background: url(../assets/icons/prev-icon.svg) center / cover no-repeat;
+
+          &::after {
+            display: none;
+          }
+        }
+
+        &-prev {
+          transform: rotate(0deg);
+        }
+
+        &-next {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+  &__slide {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 80px;
+    padding-right: 52px;
+
+    @include laptop {
+      gap: 24px;
+      padding-right: 48px;
+    }
+
+    @include tablet {
+      flex-wrap: wrap;
+      padding: 0;
+    }
+
+    &-details {
+      padding: 48px 0;
+
+      @include laptop {
+        padding: 32px 0;
+      }
+
+      @include tablet {
+        flex: 1 1 100%;
+        order: 1;
+        padding: 0;
+      }
+
+      &-controls {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin: 0 0 39px;
+
+        @include tablet {
+          display: none;
+        }
+      }
+
+      &-title,
+      &-description {
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 100%;
+        text-transform: uppercase;
+
+        @include laptop {
+          font-size: 24px;
+        }
+      }
+
+      &-title {
+        margin: 0 0 13px;
+        color: #0a23a0;
+      }
+
+      &-description {
+        margin: 0;
+        color: #000;
+      }
+    }
+
+    &-photo {
+      flex: 0 0 558px;
+      margin: 0;
+
+      @include laptop {
+        flex: 0 0 50%;
+      }
+
+      @include tablet {
+        flex: 1 1 100%;
+        order: 0;
+      }
+
+      &-image {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 40px;
+
+        @include tablet {
+          border-radius: 20px;
+        }
+      }
+    }
+  }
 }

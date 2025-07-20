@@ -20,3 +20,17 @@ if (gallerySwiperEl) {
     loop: true,
   });
 }
+
+const certificatesSwiperEl = document.querySelector('.certificates .swiper');
+
+if (certificatesSwiperEl) {
+  const swiper = new Swiper(certificatesSwiperEl, {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+}

@@ -1,3 +1,21 @@
+const burgerButton = document.querySelector('.header__main-burger-button');
+const headerMainDialog = document.querySelector('.header__main-dialog');
+
+if (burgerButton && headerMainDialog) {
+  burgerButton.addEventListener('click', (event) => {
+    headerMainDialog.classList.add('active');
+  });
+
+  headerMainDialog.addEventListener('click', (event) => {
+    const isLayout = event.target === event.currentTarget;
+    const isCloseBtn = event.target.classList.contains('header__main-dialog-close');
+
+    if (isLayout || isCloseBtn) {
+      event.currentTarget.classList.remove('active');
+    }
+  });
+}
+
 const firstScreenSwiperEl = document.querySelector('.first-screen .swiper');
 
 if (firstScreenSwiperEl) {

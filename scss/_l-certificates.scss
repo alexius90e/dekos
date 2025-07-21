@@ -1,4 +1,10 @@
 .certificates {
+  padding: 0 0 95px;
+
+  @include tablet {
+
+  }
+
   &__wrapper {
     max-width: 1284px;
     margin: 0 auto;

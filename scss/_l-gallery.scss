@@ -27,10 +27,57 @@
 
   &__slide {
     position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+
+    @include laptop {
+      border-radius: 20px;
+    }
 
     @include mobile {
       width: 100%;
       height: 450px;
+    }
+
+    &-play {
+      position: absolute;
+      inset: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &-button {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        border: none;
+        outline: none;
+        background: url(../assets/icons/play.svg) center / cover no-repeat;
+        transition: transform ease-out 0.2s;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    &-video {
+      position: absolute;
+      inset: 0;
+      z-index: 20;
+      display: none;
+
+      & > * {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &.active &-video {
+      display: block;
     }
 
     &-photo {
@@ -45,11 +92,6 @@
         display: block;
         max-width: 100%;
         height: auto;
-        border-radius: 30px;
-
-        @include laptop {
-          border-radius: 20px;
-        }
 
         @include mobile {
           width: 100%;

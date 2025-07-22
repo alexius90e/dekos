@@ -16,6 +16,18 @@ if (burgerButton && headerMainDialog) {
   });
 }
 
+const gallerySlideEls = document.querySelectorAll('.gallery__slide');
+
+gallerySlideEls.forEach((gallerySlideEl) => {
+  gallerySlideEl.addEventListener('click', (event) => {
+    const isPlayBtn = event.target.classList.contains('gallery__slide-play-button');
+
+    if (isPlayBtn) {
+      event.currentTarget.classList.add('active');
+    }
+  });
+});
+
 const firstScreenSwiperEl = document.querySelector('.first-screen .swiper');
 
 if (firstScreenSwiperEl) {

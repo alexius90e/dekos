@@ -2,6 +2,13 @@
   margin: 13px 0 35px;
 
   &__slider {
+    overflow: hidden;
+    border-radius: 40px;
+
+    @include laptop {
+      border-radius: 20px;
+    }
+
     & .swiper {
       &-pagination {
         bottom: 36px;
@@ -11,6 +18,7 @@
         gap: 5px;
         padding: 0 74px;
         box-sizing: border-box;
+        pointer-events: none;
 
         @include laptop {
           padding: 0 36px;
@@ -62,7 +70,7 @@
 
     &-content {
       position: relative;
-      z-index: 2;
+      z-index: 10;
       display: flex;
       flex-direction: column;
       gap: 18px;

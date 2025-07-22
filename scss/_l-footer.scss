@@ -23,6 +23,8 @@
   }
 
   &__subscription {
+    display: flex;
+    flex-direction: column;
     flex: 0 0 calc(100% / 4 - 40px / 4 * 3);
 
     @include laptop {
@@ -45,9 +47,14 @@
     }
 
     &-main {
+      flex: 1 1 auto;
       padding: 22px 15px 17px;
       border-radius: 10px;
       background: #000000;
+
+      @include tablet {
+        flex: 0 1 auto;
+      }
     }
 
     &-title {
@@ -212,12 +219,8 @@
             font-size: 14px;
             line-height: 100%;
             color: #000;
+            border-radius: 10px;
             background-color: #ffffff;
-
-            @include mobile {
-              min-height: 36px;
-              padding: 8px 16px;
-            }
           }
         }
       }
@@ -247,8 +250,8 @@
 
     @include tablet {
       flex-wrap: wrap;
-      gap: 20px;
-      padding: 24px 16px;
+      padding: 0;
+      background-color: rgba($color: #ffffff, $alpha: 0);
     }
   }
 
@@ -258,7 +261,7 @@
 
     @include tablet {
       max-width: none;
-      padding: 24px 16px;
+      padding: 0;
     }
 
     &-title {
@@ -344,7 +347,7 @@
     background-color: #f5f5f7;
 
     @include tablet {
-      padding: 24px 16px;
+      padding: 0;
     }
 
     &-title {

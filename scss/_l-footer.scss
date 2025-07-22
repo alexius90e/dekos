@@ -250,8 +250,9 @@
 
     @include tablet {
       flex-wrap: wrap;
-      padding: 0;
-      background-color: rgba($color: #ffffff, $alpha: 0);
+      padding: 16px;
+      border-radius: 20px;
+      background-color: rgba($color: #ffffff, $alpha: 1);
     }
   }
 
@@ -261,7 +262,7 @@
 
     @include tablet {
       max-width: none;
-      padding: 0;
+      padding: 24px 16px;
     }
 
     &-title {
@@ -347,7 +348,7 @@
     background-color: #f5f5f7;
 
     @include tablet {
-      padding: 0;
+      padding: 24px 16px;
     }
 
     &-title {

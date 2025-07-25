@@ -1,0 +1,107 @@
+.telegram-news {
+  &__wrapper {
+    position: relative;
+    padding: 61px 48px 48px;
+    padding-right: calc(476px + 100px + 48px);
+    border-radius: 40px;
+    background-color: #0a23a0;
+
+    @include desktop {
+      padding-right: calc(400px + 48px + 48px);
+    }
+
+    @include laptop {
+      padding: 60px 48px 0;
+    }
+
+    @include tablet {
+      padding: 48px 24px 0;
+      border-radius: 20px;
+    }
+  }
+
+  &__content {
+    &-title {
+      margin: 0 0 42px;
+      font-weight: 900;
+      font-size: 50px;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: #fff;
+
+      @include tablet {
+        margin-bottom: 32px;
+        font-size: 44px;
+      }
+
+      @include mobile {
+        margin-bottom: 20px;
+        font-size: 30px;
+      }
+    }
+
+    &-description {
+      margin: 0 0 77px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 100%;
+      color: #fff;
+
+      @include laptop {
+        margin-bottom: 36px;
+        line-height: 125%;
+      }
+
+      @include mobile {
+        font-size: 16px;
+      }
+    }
+
+    &-contact {
+      &-button {
+        display: inline-block;
+        padding: 17px 45px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 100%;
+        text-align: center;
+        color: #151629;
+        border: none;
+        border-radius: 64px;
+        background-color: #ffffff;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__photo {
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    width: fit-content;
+    margin: 0;
+
+    @include desktop {
+      right: 48px;
+    }
+
+    @include laptop {
+      position: static;
+    }
+
+    &-image {
+      display: block;
+      max-width: 100%;
+      width: 476px;
+      height: auto;
+
+      @include desktop {
+        width: 400px;
+      }
+
+      @include laptop {
+        width: 476px;
+      }
+    }
+  }
+}

@@ -2123,6 +2123,116 @@ textarea {
   color: #000;
 }
 
+.telegram-news__wrapper {
+  position: relative;
+  padding: 61px 48px 48px;
+  padding-right: 624px;
+  border-radius: 40px;
+  background-color: #0a23a0;
+}
+@media (max-width: 1400px) {
+  .telegram-news__wrapper {
+    padding-right: 496px;
+  }
+}
+@media (max-width: 1024px) {
+  .telegram-news__wrapper {
+    padding: 60px 48px 0;
+  }
+}
+@media (max-width: 768px) {
+  .telegram-news__wrapper {
+    padding: 48px 24px 0;
+    border-radius: 20px;
+  }
+}
+.telegram-news__content-title {
+  margin: 0 0 42px;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .telegram-news__content-title {
+    margin-bottom: 32px;
+    font-size: 44px;
+  }
+}
+@media (max-width: 576px) {
+  .telegram-news__content-title {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+}
+.telegram-news__content-description {
+  margin: 0 0 77px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: #fff;
+}
+@media (max-width: 1024px) {
+  .telegram-news__content-description {
+    margin-bottom: 36px;
+    line-height: 125%;
+  }
+}
+@media (max-width: 576px) {
+  .telegram-news__content-description {
+    font-size: 16px;
+  }
+}
+.telegram-news__content-contact-button {
+  display: inline-block;
+  padding: 17px 45px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  color: #151629;
+  border: none;
+  border-radius: 64px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.telegram-news__photo {
+  position: absolute;
+  right: 100px;
+  bottom: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+}
+@media (max-width: 1400px) {
+  .telegram-news__photo {
+    right: 48px;
+  }
+}
+@media (max-width: 1024px) {
+  .telegram-news__photo {
+    position: static;
+  }
+}
+.telegram-news__photo-image {
+  display: block;
+  max-width: 100%;
+  width: 476px;
+  height: auto;
+}
+@media (max-width: 1400px) {
+  .telegram-news__photo-image {
+    width: 400px;
+  }
+}
+@media (max-width: 1024px) {
+  .telegram-news__photo-image {
+    width: 476px;
+  }
+}
+
 .footer {
   padding: 48px 0 0;
   background-color: #f5f5f5;

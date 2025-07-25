@@ -1,0 +1,94 @@
+.advantages {
+  margin: 84px 0 95px;
+
+  @include laptop {
+    margin: 80px 0;
+  }
+
+  @include mobile {
+    margin: 60px 0;
+  }
+
+  &__title {
+    max-width: 1428px;
+    margin: 0 auto 56px;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: #000;
+
+    @include laptop {
+      margin-bottom: 48px;
+      font-size: 30px;
+    }
+
+    @include mobile {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px 72px;
+    max-width: 1428px;
+    margin: 0 auto;
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 calc(100% / 4 - 72px / 4 * 3);
+    max-width: calc(100% / 4 - 72px / 4 * 3);
+    box-sizing: border-box;
+
+    @include laptop {
+      flex: 0 0 calc(100% / 2 - 72px / 2);
+      max-width: calc(100% / 2 - 72px / 2);
+    }
+
+    @include mobile {
+      flex: 1 1 100%;
+      max-width: none;
+    }
+
+    &-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 55px;
+      height: 55px;
+      margin: 0 0 22px;
+      border-radius: 14px;
+      background-color: #0a23a0;
+
+      &-image {
+        display: block;
+        max-width: 100%;
+        width: 30px;
+        height: auto;
+      }
+    }
+
+    &-title {
+      margin: 0 0 5px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 112%;
+      text-transform: uppercase;
+      color: #000;
+    }
+
+    &-description {
+      margin: 0;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 112%;
+      color: #000;
+    }
+  }
+}

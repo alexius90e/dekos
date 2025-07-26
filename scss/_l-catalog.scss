@@ -1,0 +1,45 @@
+.catalog {
+  margin: 39px 0 109px;
+
+  @include laptop {
+    margin: 40px 0 80px;
+  }
+
+  @include mobile {
+    margin: 40px 0 60px;
+  }
+
+  &__wrapper {
+    max-width: 1374px;
+    margin: 0 auto;
+  }
+
+  &__top {
+  }
+
+  &__title {
+    margin: 0 0 28px;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #151629;
+  }
+
+  &__main {
+    display: flex;
+    gap: 38px;
+
+    @include laptop {
+      display: block;
+    }
+
+    &-filter {
+      flex: 0 0 248px;
+    }
+
+    &-content {
+      flex: 1 1 auto;
+    }
+  }
+}

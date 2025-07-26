@@ -1,0 +1,143 @@
+.catalog-main {
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    @include laptop {
+      gap: 20px 10px;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 calc(100% / 3 - 20px / 3 * 2);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #f7f7f7;
+
+    @include desktop {
+      flex: 0 0 calc(100% / 2 - 20px / 2);
+    }
+
+    @include laptop {
+      flex: 0 0 calc(100% / 2 - 10px / 2);
+    }
+
+    @include mobile {
+      flex: 1 1 100%;
+    }
+
+    &-title {
+      margin: 0 0 4px;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: #151629;
+    }
+
+    &-price {
+      margin: 0 0 20px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 125%;
+      text-transform: uppercase;
+      color: #000;
+    }
+
+    &-photo {
+      margin: 0 0 13px;
+
+      &-image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+    }
+
+    &-description {
+      flex: 1 1 auto;
+      margin: 0 0 17px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+      color: #000;
+    }
+
+    &-buttons {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+
+      &-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      &-wrapper:has(&-basket) {
+        flex: 1 1 auto;
+      }
+
+      &-basket {
+        display: inline-block;
+        max-width: 200px;
+        width: 100%;
+        padding: 13px 26px;
+        box-sizing: border-box;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 100%;
+        color: #000;
+        border: none;
+        border-radius: 10px;
+        background-color: #ffffff;
+        transition: filter ease-out 0.2s;
+        cursor: pointer;
+
+        &:hover {
+          filter: invert(100%);
+        }
+      }
+
+      &-favourites,
+      &-comparison {
+        display: inline-block;
+        flex: 0 0 auto;
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 10px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 28px;
+        background-color: #ffffff;
+        transition: filter ease-out 0.2s;
+        cursor: pointer;
+
+        &:hover {
+          filter: invert(100%);
+        }
+      }
+
+      &-favourites {
+        background-image: url(../assets/icons/favourites.svg);
+      }
+
+      &-comparison {
+        background-image: url(../assets/icons/comparison.svg);
+      }
+    }
+  }
+
+  &__breadcrumbs {
+    margin: 33px 0 0;
+  }
+}

@@ -2046,6 +2046,12 @@ textarea {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
+  display: none;
+}
+@media (max-width: 1024px) {
+  .catalog__top-filter {
+    display: block;
+  }
 }
 .catalog__top-filter-toggler {
   display: block;

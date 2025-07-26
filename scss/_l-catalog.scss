@@ -32,6 +32,11 @@
 
     &-filter {
       flex: 0 0 auto;
+      display: none;
+
+      @include laptop {
+        display: block;
+      }
 
       &-toggler {
         display: block;

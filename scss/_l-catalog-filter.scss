@@ -30,7 +30,7 @@
       position: relative;
       max-width: 360px;
       max-height: 100dvh;
-      border-radius: 0 20px 20px 0 ;
+      border-radius: 0 20px 20px 0;
       transform: translateX(-100dvw);
       transition: transform ease-out 0.2s;
     }
@@ -174,6 +174,7 @@
           color: #0082ff;
           border: none;
           background-color: rgba($color: #ffffff, $alpha: 0);
+          cursor: pointer;
 
           &::after {
             content: '';
@@ -212,34 +213,43 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    padding-left: 24px;
+    padding: 0;
     border: none;
     margin: 0;
 
-    & .form-check-label {
+    &-label {
       display: flex;
       align-items: center;
       gap: 8px;
-      padding-top: 2px;
+      padding: 1px 0;
       width: 100%;
+
+      &::before {
+        content: '';
+        display: block;
+        flex: 0 0 auto;
+        height: 16px;
+        width: 16px;
+        margin: 1px;
+        box-sizing: border-box;
+        border: 1px solid #000000;
+        border-radius: 2px;
+        transition-property: border-color, background-color, background-image;
+        transition-timing-function: ease-out;
+        transition-duration: 0.2s;
+        will-change: border-color, background-color, background-image;
+        cursor: pointer;
+      }
     }
 
-    & .form-check-input {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      display: block;
-      height: 18px;
-      width: 18px;
-      margin: 0;
-      box-sizing: border-box;
-      border: 2px solid #000000;
-      border-radius: 2px;
-      transform: translateY(-50%);
+    &:has(&-input:checked) &-label::before {
+      border-color: #0a23a0;
+      background: url(../assets/icons/check-mark.svg) center / 12px no-repeat;
+      background-color: #0a23a0;
+    }
 
-      &:checked {
-        border-color: #0d6efd;
-      }
+    &-input {
+      display: none;
     }
 
     &-value {
@@ -313,6 +323,7 @@
       border: none;
       outline: none;
       background-color: rgba($color: #ffffff, $alpha: 0);
+      cursor: pointer;
     }
   }
 }

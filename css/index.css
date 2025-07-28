@@ -2062,7 +2062,7 @@ textarea {
   border-radius: 6px;
   outline: none;
   background: url(../assets/icons/filter-rectangle.svg) center/cover no-repeat;
-  background-color: whitesmoke;
+  background-color: rgba(255, 255, 255, 0);
   cursor: pointer;
 }
 .catalog__main {
@@ -2278,6 +2278,7 @@ textarea {
   color: #0082ff;
   border: none;
   background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
 }
 .catalog-filter__block-panel-more-button::after {
   content: "";
@@ -2314,11 +2315,11 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   gap: 8px;
-  padding-left: 24px;
+  padding: 0;
   border: none;
   margin: 0;
 }
-.catalog-filter__check .form-check-label {
+.catalog-filter__check-label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2326,26 +2327,38 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   gap: 8px;
-  padding-top: 2px;
+  padding: 1px 0;
   width: 100%;
 }
-.catalog-filter__check .form-check-input {
-  position: absolute;
-  top: 50%;
-  left: 0;
+.catalog-filter__check-label::before {
+  content: "";
   display: block;
-  height: 18px;
-  width: 18px;
-  margin: 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  height: 16px;
+  width: 16px;
+  margin: 1px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 2px solid #000000;
+  border: 1px solid #000000;
   border-radius: 2px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transition-property: border-color, background-color, background-image;
+  transition-property: border-color, background-color, background-image;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  will-change: border-color, background-color, background-image;
+  cursor: pointer;
 }
-.catalog-filter__check .form-check-input:checked {
-  border-color: #0d6efd;
+.catalog-filter__check:has(.catalog-filter__check-input:checked) .catalog-filter__check-label::before {
+  border-color: #0a23a0;
+  background: url(../assets/icons/check-mark.svg) center/12px no-repeat;
+  background-color: #0a23a0;
+}
+.catalog-filter__check-input {
+  display: none;
 }
 .catalog-filter__check-value {
   -webkit-box-flex: 0;
@@ -2420,6 +2433,7 @@ textarea {
   border: none;
   outline: none;
   background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
 }
 
 .catalog-main__cards {

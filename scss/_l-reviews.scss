@@ -1,0 +1,215 @@
+.reviews {
+  margin: 41px 0 26px;
+
+  &__title {
+    margin: 0 0 14px;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 150%;
+    color: #000;
+    text-align: center;
+  }
+
+  &__cards {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 5px;
+  }
+
+  &__card {
+    display: block;
+    padding: 24px 16px 31px;
+    flex: 0 0 calc(100% / 5 - 5px / 5 * 4);
+    box-sizing: border-box;
+    border-radius: 25px;
+    background-color: #f7f8fb;
+
+    @include desktop {
+      flex: 0 0 calc(100% / 3 - 5px / 3 * 2);
+    }
+
+    @include tablet {
+      flex: 0 0 calc(100% / 2 - 5px / 2 * 2);
+    }
+
+    @include mobile {
+      flex: 1 1 100%;
+    }
+
+    &-client {
+      display: flex;
+      align-content: center;
+      gap: 21px;
+      margin: 0 0 21px;
+
+      &-photo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 auto;
+        margin: 0;
+
+        &-image {
+          display: block;
+          max-width: 100%;
+          width: 70px;
+          height: auto;
+        }
+      }
+
+      &-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 6px;
+
+        &-name {
+          font-weight: 700;
+          font-size: 10px;
+          line-height: 150%;
+          letter-spacing: 0.03em;
+          color: #282828;
+        }
+
+        &-location {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          font-weight: 400;
+          font-size: 8px;
+          line-height: 150%;
+          color: #282728;
+
+          &::before {
+            content: '';
+            display: inline-block;
+            flex: 0 0 auto;
+            width: 14px;
+            height: 14px;
+            background: url(../assets/icons/location.svg) center / 12px no-repeat;
+          }
+        }
+
+        &-rate {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+
+          &-star {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: url(../assets/icons/star-rate.svg) center / 12px no-repeat;
+          }
+
+          &[data-rate='1'] &-star {
+            &:nth-child(n + 2) {
+              filter: grayscale(100%);
+            }
+          }
+
+          &[data-rate='2'] &-star {
+            &:nth-child(n + 3) {
+              filter: grayscale(100%);
+            }
+          }
+
+          &[data-rate='3'] &-star {
+            &:nth-child(n + 4) {
+              filter: grayscale(100%);
+            }
+          }
+
+          &[data-rate='4'] &-star {
+            &:nth-child(n + 5) {
+              filter: grayscale(100%);
+            }
+          }
+
+          &[data-rate='5'] &-star {
+            &:nth-child(n + 6) {
+              filter: grayscale(100%);
+            }
+          }
+        }
+      }
+    }
+
+    &-title {
+      margin: 0 0 10px;
+      font-weight: 800;
+      font-size: 14px;
+      line-height: 121%;
+      letter-spacing: 0.03em;
+      color: #1c1c1c;
+    }
+
+    &-review {
+      margin: 0;
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 150%;
+      letter-spacing: 0.03em;
+      color: #1c1c1c;
+    }
+
+    &-more {
+      margin: 7px 0 0;
+
+      &-link {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        width: fit-content;
+        padding: 0 0 3px;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 100%;
+        letter-spacing: 0.04em;
+        color: #f04;
+        border-bottom: 1px dotted #ff0044;
+
+        &::after {
+          content: '';
+          display: inline-block;
+          flex: 0 0 auto;
+          width: 12px;
+          height: 12px;
+          background: url(../assets/icons/arrow-red.svg) center / 12px no-repeat;
+        }
+      }
+    }
+  }
+
+  &__add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0 0;
+
+    &-button {
+      display: inline-block;
+      padding: 14px 32px;
+      box-sizing: border-box;
+      font-weight: 600;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #0a23a0;
+      border: 1px solid #0a23a0;
+      border-radius: 50px;
+      background-color: rgba($color: #0a23a0, $alpha: 0);
+      transition-property: background-color, color;
+      transition-timing-function: ease-out;
+      transition-duration: 0.2s;
+      cursor: pointer;
+
+      &:hover {
+        color: #ffffff;
+        background-color: rgba($color: #0a23a0, $alpha: 1);
+      }
+    }
+  }
+}

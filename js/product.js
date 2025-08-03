@@ -71,7 +71,7 @@ productBottomInstructionEls.forEach((instructionEl) => {
   instructionEl.addEventListener('click', (event) => {
     const isActive = event.currentTarget.classList.contains('active');
     const isToggler = event.target.classList.contains('product__bottom-instruction-toggler');
-    const panel = instructionEl.querySelector('.product__bottom-instruction-panel');
+    const panel = event.currentTarget.querySelector('.product__bottom-instruction-panel');
 
     if (isToggler && panel) {
       if (isActive) {
@@ -81,6 +81,40 @@ productBottomInstructionEls.forEach((instructionEl) => {
         panel.style.maxHeight = `${panel.scrollHeight}px`;
         event.currentTarget.classList.add('active');
       }
+    }
+  });
+});
+
+const faqListItemEls = document.querySelectorAll('.faq__list-item');
+
+function updateFaqListItem(faqEl) {
+  const isActive = faqEl.classList.contains('active');
+  const panel = faqEl.querySelector('.faq__list-item-panel');
+
+  if (panel) {
+    if (isActive) {
+      panel.style.maxHeight = `${panel.scrollHeight}px`;
+    } else {
+      panel.style.maxHeight = `${0}px`;
+    }
+  }
+}
+
+faqListItemEls.forEach((faqEl) => {
+  updateFaqListItem(faqEl);
+
+  faqEl.addEventListener('click', (event) => {
+    const isActive = event.currentTarget.classList.contains('active');
+    const isTogglerBtn = event.target.classList.contains('faq__list-item-toggler-button');
+    const isTogglerText = event.target.classList.contains('faq__list-item-toggler-text');
+
+    if (isTogglerBtn || isTogglerText) {
+      if (isActive) {
+        event.currentTarget.classList.remove('active');
+      } else {
+        event.currentTarget.classList.add('active');
+      }
+      updateFaqListItem(event.currentTarget);
     }
   });
 });

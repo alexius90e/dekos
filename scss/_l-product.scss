@@ -96,6 +96,7 @@
     }
 
     &-left {
+      position: relative;
       flex: 1 1 auto;
 
       @include laptop {
@@ -115,6 +116,66 @@
 
       @include laptop {
         flex: 1 1 100%;
+      }
+    }
+
+    &-buttons {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      gap: 13px;
+
+      &-favourite,
+      &-compare {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 auto;
+        width: 40px;
+        aspect-ratio: 1 / 1;
+        border: none;
+        border-radius: 10px;
+        background-color: #f5f5f5;
+        transition-property: background-color;
+        transition-timing-function: ease-out;
+        transition-duration: 0.2s;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #181c26;
+        }
+
+        &::before {
+          content: '';
+          display: block;
+          width: 30px;
+          aspect-ratio: 1 / 1;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          transition-property: filter;
+          transition-timing-function: ease-out;
+          transition-duration: 0.2s;
+        }
+
+        &:hover::before {
+          filter: brightness(0%) invert(100%);
+        }
+      }
+
+      &-favourite {
+        &::before {
+          background-image: url(../assets/icons/favourites.svg);
+        }
+      }
+
+      &-compare {
+        &::before {
+          background-image: url(../assets/icons/comparison.svg);
+        }
       }
     }
 
@@ -938,7 +999,7 @@
           justify-content: space-between;
           flex-wrap: wrap;
           gap: 6px 20px;
-          padding: 8px 8px 10px 24px;
+          padding: 14px 12px 14px 24px;
           border-radius: 20px;
           background-color: #f7f8fb;
 

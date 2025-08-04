@@ -9,4 +9,10 @@
   & > * {
     margin: 0;
   }
+
+  & .product-line {
+    &__card {
+      background-color: #ffffff;
+    }
+  }
 }

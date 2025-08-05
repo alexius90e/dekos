@@ -4879,6 +4879,92 @@ textarea {
   color: #000;
 }
 
+.popular-brands {
+  margin: 39px 0 61px;
+}
+.popular-brands__title {
+  margin: 0 0 32px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #151629;
+}
+.popular-brands__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+.popular-brands__card {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(25% - 15px);
+          flex: 0 0 calc(25% - 15px);
+  min-height: 340px;
+  padding: 72px 24px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 40px;
+  background-color: #f5f5f5;
+}
+@media (max-width: 1400px) {
+  .popular-brands__card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(33.3333333333% - 13.3333333333px);
+            flex: 0 0 calc(33.3333333333% - 13.3333333333px);
+  }
+}
+@media (max-width: 1024px) {
+  .popular-brands__card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(50% - 10px);
+            flex: 0 0 calc(50% - 10px);
+  }
+}
+@media (max-width: 576px) {
+  .popular-brands__card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    min-height: 280px;
+    padding: 56px 24px;
+  }
+}
+.popular-brands__card-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 27px;
+}
+.popular-brands__card-logo-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.popular-brands__card-title {
+  margin: 0 0 11px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 67%;
+  text-align: center;
+  color: #000;
+}
+.popular-brands__card-counter {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: center;
+  color: #000;
+}
+
 .footer {
   padding: 48px 0 0;
   background-color: #f5f5f5;

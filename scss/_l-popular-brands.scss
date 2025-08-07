@@ -1,6 +1,11 @@
 .popular-brands {
   margin: 39px 0 61px;
 
+  &__wrapper {
+    max-width: 1412px;
+    margin: 0 auto;
+  }
+
   &__title {
     margin: 0 0 32px;
     font-weight: 800;

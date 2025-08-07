@@ -64,3 +64,31 @@ if (certificatesSwiperEl) {
     },
   });
 }
+
+// brands
+
+const allBrandsFilterCategorySelectEls = document.querySelectorAll(
+  '.all-brands__filter-category-select'
+);
+
+allBrandsFilterCategorySelectEls.forEach((selectEl) => {
+  selectEl.addEventListener('click', (event) => {
+    const isToggler = event.target.classList.contains('all-brands__filter-category-select-toggler');
+    const isLayout = event.target === event.currentTarget;
+
+    if (isToggler) event.currentTarget.classList.add('active');
+    if (isLayout) event.currentTarget.classList.remove('active');
+  });
+});
+
+const allBrandsFilterSortSelectEls = document.querySelectorAll('.all-brands__filter-sort-select');
+
+allBrandsFilterSortSelectEls.forEach((selectEl) => {
+  selectEl.addEventListener('click', (event) => {
+    const isToggler = event.target.classList.contains('all-brands__filter-sort-select-toggler');
+    const isLayout = event.target === event.currentTarget;
+
+    if (isToggler) event.currentTarget.classList.add('active');
+    if (isLayout) event.currentTarget.classList.remove('active');
+  });
+});

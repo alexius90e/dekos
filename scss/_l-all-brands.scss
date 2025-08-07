@@ -119,6 +119,8 @@
             color: #292929;
             white-space: nowrap;
             text-overflow: ellipsis;
+            pointer-events: none;
+            user-select: none;
           }
 
           &::after {
@@ -232,7 +234,7 @@
             inset: 0;
             z-index: 99;
             display: block;
-            background-color: rgba($color: #000000, $alpha: 0.05);
+            background-color: rgba($color: #000000, $alpha: 0);
           }
         }
 
@@ -261,6 +263,8 @@
             color: #292929;
             white-space: nowrap;
             text-overflow: ellipsis;
+            pointer-events: none;
+            user-select: none;
           }
 
           &::after {

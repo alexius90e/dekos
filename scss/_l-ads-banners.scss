@@ -6,6 +6,8 @@
     align-items: stretch;
     flex-wrap: wrap;
     gap: 28px;
+    max-width: 1446px;
+    margin: 0 auto;
   }
 
   &__sale,
@@ -91,6 +93,10 @@
       &-image {
         width: 175px;
 
+        @include tablet {
+          width: 124px;
+        }
+
         @include mobile {
           width: 112px;
         }
@@ -134,6 +140,10 @@
 
       &-image {
         width: 148px;
+
+        @include tablet {
+          width: 124px;
+        }
 
         @include mobile {
           width: 112px;

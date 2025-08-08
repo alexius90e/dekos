@@ -1,0 +1,144 @@
+.ads-banners {
+  margin: 43px 0 70px;
+
+  &__wrapper {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 28px;
+  }
+
+  &__sale,
+  &__discount {
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+    flex: 0 0 calc(100% / 2 - 28px / 2);
+    padding: 34px 28px 30px;
+    box-sizing: border-box;
+    border-radius: 30px;
+
+    @include laptop {
+      flex: 1 1 100%;
+    }
+
+    @include tablet {
+      gap: 16px;
+      padding: 24px 20px;
+      border-radius: 10px;
+    }
+
+    &-content {
+      &-title {
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 125%;
+        text-transform: uppercase;
+
+        @include mobile {
+          font-size: 20px;
+        }
+      }
+
+      &-text {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 125%;
+        color: #fff;
+
+        @include mobile {
+          font-size: 14px;
+        }
+      }
+    }
+
+    &-icon {
+      margin: 0;
+
+      &-image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  &__sale {
+    background-color: #0a23a0;
+
+    &-content {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 11px;
+
+      &-title {
+        margin: 0;
+        color: #fff;
+      }
+
+      &-text {
+        margin: 0;
+      }
+    }
+
+    &-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &-image {
+        width: 175px;
+
+        @include mobile {
+          width: 112px;
+        }
+      }
+    }
+  }
+
+  &__discount {
+    background-color: #151629;
+
+    &-content {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 10px;
+
+      @include mobile {
+        gap: 4px;
+      }
+
+      &-title {
+        max-width: 300px;
+        margin: 0 0 9px;
+        color: #3477e0;
+
+        @include mobile {
+          margin-bottom: 4px;
+        }
+      }
+
+      &-text {
+        margin: 0;
+      }
+    }
+
+    &-icon {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-end;
+
+      &-image {
+        width: 148px;
+
+        @include mobile {
+          width: 112px;
+        }
+      }
+    }
+  }
+}

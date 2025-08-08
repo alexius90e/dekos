@@ -5684,6 +5684,182 @@ textarea {
   }
 }
 
+.ads-banners {
+  margin: 43px 0 70px;
+}
+.ads-banners__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 28px;
+}
+.ads-banners__sale, .ads-banners__discount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 28px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(50% - 14px);
+          flex: 0 0 calc(50% - 14px);
+  padding: 34px 28px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 30px;
+}
+@media (max-width: 1024px) {
+  .ads-banners__sale, .ads-banners__discount {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+}
+@media (max-width: 768px) {
+  .ads-banners__sale, .ads-banners__discount {
+    gap: 16px;
+    padding: 24px 20px;
+    border-radius: 10px;
+  }
+}
+.ads-banners__sale-content-title, .ads-banners__discount-content-title {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 125%;
+  text-transform: uppercase;
+}
+@media (max-width: 576px) {
+  .ads-banners__sale-content-title, .ads-banners__discount-content-title {
+    font-size: 20px;
+  }
+}
+.ads-banners__sale-content-text, .ads-banners__discount-content-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 125%;
+  color: #fff;
+}
+@media (max-width: 576px) {
+  .ads-banners__sale-content-text, .ads-banners__discount-content-text {
+    font-size: 14px;
+  }
+}
+.ads-banners__sale-icon, .ads-banners__discount-icon {
+  margin: 0;
+}
+.ads-banners__sale-icon-image, .ads-banners__discount-icon-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.ads-banners__sale {
+  background-color: #0a23a0;
+}
+.ads-banners__sale-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 11px;
+}
+.ads-banners__sale-content-title {
+  margin: 0;
+  color: #fff;
+}
+.ads-banners__sale-content-text {
+  margin: 0;
+}
+.ads-banners__sale-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.ads-banners__sale-icon-image {
+  width: 175px;
+}
+@media (max-width: 576px) {
+  .ads-banners__sale-icon-image {
+    width: 112px;
+  }
+}
+.ads-banners__discount {
+  background-color: #151629;
+}
+.ads-banners__discount-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+@media (max-width: 576px) {
+  .ads-banners__discount-content {
+    gap: 4px;
+  }
+}
+.ads-banners__discount-content-title {
+  max-width: 300px;
+  margin: 0 0 9px;
+  color: #3477e0;
+}
+@media (max-width: 576px) {
+  .ads-banners__discount-content-title {
+    margin-bottom: 4px;
+  }
+}
+.ads-banners__discount-content-text {
+  margin: 0;
+}
+.ads-banners__discount-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.ads-banners__discount-icon-image {
+  width: 148px;
+}
+@media (max-width: 576px) {
+  .ads-banners__discount-icon-image {
+    width: 112px;
+  }
+}
+
 .footer {
   padding: 48px 0 0;
   background-color: #f5f5f5;

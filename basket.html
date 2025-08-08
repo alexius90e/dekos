@@ -218,10 +218,96 @@
     </header>
 
     <main class="main">
-            <section class="buy-with-product">
+      <section class="basket">
+        <div class="container">
+          <div class="basket__wrapper">
+            <h2 class="basket__title">Корзина</h2>
+
+            <div class="basket__main">
+              <div class="basket__cards">
+                <div class="basket__card">
+                  <figure class="basket__card-photo">
+                    <img
+                      class="basket__card-photo-image"
+                      src="./assets/basket/basket-product.jpg"
+                      alt="product"
+                    />
+                  </figure>
+
+                  <div class="basket__card-details">
+                    <div class="basket__card-details-top">
+                      <div class="basket__card-details-buttons">
+                        <button class="basket__card-details-buttons-favourite"></button>
+                        <button class="basket__card-details-buttons-compare"></button>
+                      </div>
+
+                      <div class="basket__card-details-price">
+                        <div class="basket__card-details-price-old">125 000 ₽</div>
+                        <div class="basket__card-details-price-new">
+                          <span class="basket__card-details-price-new-value">93 000</span>
+                          <span class="basket__card-details-price-new-currency">₽</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="basket__card-details-bottom">
+                      <div class="basket__card-details-title">
+                        Dekos Loft Brick Черный (Dual Sim)
+                      </div>
+
+                      <div class="basket__card-details-controls">
+                        <button class="basket__card-details-controls-delete"></button>
+                        <button class="basket__card-details-controls-minus">-</button>
+                        <span class="basket__card-details-controls-counter">1</span>
+                        <button class="basket__card-details-controls-plus">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="basket__details">
+                <div class="basket__details-promocode">
+                  <input
+                    class="basket__details-promocode-input"
+                    type="text"
+                    placeholder="Введите скидочный код"
+                  />
+                  <button class="basket__details-promocode-button">Получить</button>
+                </div>
+
+                <ul class="basket__details-list">
+                  <li class="basket__details-list-item">
+                    <div class="basket__details-list-item-name">Товар</div>
+                    <div class="basket__details-list-item-price">390 000₽</div>
+                  </li>
+                  <li class="basket__details-list-item">
+                    <div class="basket__details-list-item-name">Скидка</div>
+                    <div class="basket__details-list-item-price">-100 000₽</div>
+                  </li>
+                  <li class="basket__details-list-item">
+                    <div class="basket__details-list-item-name">Доставка</div>
+                    <div class="basket__details-list-item-price">4 000₽</div>
+                  </li>
+                </ul>
+                <div class="basket__details-total">
+                  <span class="basket__details-total-title">Итого: </span>
+                  <span class="basket__details-total-price"> 294.000</span>
+                  <span class="basket__details-total-currency">₽</span>
+                </div>
+                <div class="basket__details-pay">
+                  <button class="basket__details-pay-button">Оплатить</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="buy-with-product">
         <div class="container">
           <div class="buy-with-product__wrapper">
-            <h2 class="buy-with-product__title">Линейка продукции Dekos</h2>
+            <h2 class="buy-with-product__title">С этим товаром покупают</h2>
 
             <div class="buy-with-product__cards">
               <div class="buy-with-product__card">

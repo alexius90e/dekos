@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="./js/swiper-bundle.min.js" defer></script>
+    <script src="./js/index.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-wrapper">
+            <nav class="header__top-nav">
+              <ul class="header__top-nav-menu">
+                <li class="header__top-nav-menu-item">
+                  <a class="header__top-nav-menu-item-link" href="#">О компании</a>
+                </li>
+                <li class="header__top-nav-menu-item">
+                  <a class="header__top-nav-menu-item-link" href="#">Наши объекты</a>
+                </li>
+                <li class="header__top-nav-menu-item">
+                  <a class="header__top-nav-menu-item-link" href="#">
+                    Акции
+                    <span class="header__top-nav-menu-item-link-counter">12</span>
+                  </a>
+                </li>
+                <li class="header__top-nav-menu-item">
+                  <a class="header__top-nav-menu-item-link" href="#">Заказать оптом</a>
+                </li>
+                <li class="header__top-nav-menu-item">
+                  <a class="header__top-nav-menu-item-link" href="#">Покупателям</a>
+                </li>
+                <li class="header__top-nav-menu-item">
+                  <a class="header__top-nav-menu-item-link" href="#">Гарантии</a>
+                </li>
+                <li class="header__top-nav-menu-item">
+                  <a class="header__top-nav-menu-item-link" href="#">Доставка</a>
+                </li>
+                <li class="header__top-nav-menu-item">
+                  <a class="header__top-nav-menu-item-link" href="#">Оплата</a>
+                </li>
+                <li class="header__top-nav-menu-item">
+                  <a class="header__top-nav-menu-item-link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="header__top-contacts">
+              <div class="header__top-contacts-email">
+                <a class="header__top-contacts-email-link" href="mailto:dekos@info.com"
+                  >dekos@info.com</a
+                >
+              </div>
+
+              <div class="header__top-contacts-phone">
+                <div class="header__top-contacts-phone-main">
+                  <a class="header__top-contacts-phone-main-link" href="tel:+79997777777">
+                    +7 999 777-77-77
+                  </a>
+                </div>
+
+                <ul class="header__top-contacts-phone-hidden">
+                  <li class="header__top-contacts-phone-hidden-item">
+                    <a class="header__top-contacts-phone-hidden-item-link" href="tel:+79997777777">
+                      +7 999 777-77-77
+                    </a>
+                  </li>
+                  <li class="header__top-contacts-phone-hidden-item">
+                    <a class="header__top-contacts-phone-hidden-item-link" href="tel:+79997777777">
+                      +7 999 777-77-77
+                    </a>
+                  </li>
+                  <li class="header__top-contacts-phone-hidden-item">
+                    <a class="header__top-contacts-phone-hidden-item-link" href="tel:+79997777777">
+                      +7 999 777-77-77
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__main">
+        <div class="container">
+          <div class="header__main-wrapper">
+            <div class="header__main-logo">
+              <a class="header__main-logo-link" href="#">
+                <img class="header__main-logo-link-image" src="./assets/logo.svg" alt="logo" />
+              </a>
+            </div>
+
+            <div class="header__main-dialog">
+              <div class="header__main-dialog-wrapper">
+                <button class="header__main-dialog-close"></button>
+
+                <div class="header__main-dialog-content">
+                  <div class="header__main-dialog-controls">
+                    <div class="header__main-dialog-controls-catalog">
+                      <button class="header__main-dialog-controls-catalog-button">Каталог</button>
+                    </div>
+
+                    <div class="header__main-dialog-controls-search">
+                      <input
+                        class="header__main-dialog-controls-search-input"
+                        type="text"
+                        name="search"
+                        placeholder="Поиск"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="header__main-dialog-buttons">
+                    <button class="header__main-dialog-buttons-item">
+                      <img
+                        class="header__main-dialog-buttons-item-icon"
+                        src="./assets/icons/header-icon-1.svg"
+                        alt="icon"
+                      />
+                      <span class="header__main-dialog-buttons-item-text">Войти</span>
+                    </button>
+                    <button class="header__main-dialog-buttons-item">
+                      <img
+                        class="header__main-dialog-buttons-item-icon"
+                        src="./assets/icons/header-icon-2.svg"
+                        alt="icon"
+                      />
+                      <span class="header__main-dialog-buttons-item-text">Избранное</span>
+                      <span class="header__main-dialog-buttons-item-counter">4</span>
+                    </button>
+                    <button class="header__main-dialog-buttons-item">
+                      <img
+                        class="header__main-dialog-buttons-item-icon"
+                        src="./assets/icons/header-icon-3.svg"
+                        alt="icon"
+                      />
+                      <span class="header__main-dialog-buttons-item-text">Сравнение</span>
+                    </button>
+                    <button class="header__main-dialog-buttons-item">
+                      <img
+                        class="header__main-dialog-buttons-item-icon"
+                        src="./assets/icons/header-icon-4.svg"
+                        alt="icon"
+                      />
+                      <span class="header__main-dialog-buttons-item-text">Корзина</span>
+                      <span class="header__main-dialog-buttons-item-counter">12</span>
+                    </button>
+                  </div>
+
+                  <nav class="header__main-dialog-nav">
+                    <ul class="header__main-dialog-nav-menu">
+                      <li class="header__main-dialog-nav-menu-item">
+                        <a class="header__main-dialog-nav-menu-item-link" href="#">О компании</a>
+                      </li>
+                      <li class="header__main-dialog-nav-menu-item">
+                        <a class="header__main-dialog-nav-menu-item-link" href="#">Наши объекты</a>
+                      </li>
+                      <li class="header__main-dialog-nav-menu-item">
+                        <a class="header__main-dialog-nav-menu-item-link" href="#">
+                          Акции
+                          <span class="header__main-dialog-nav-menu-item-link-counter">12</span>
+                        </a>
+                      </li>
+                      <li class="header__main-dialog-nav-menu-item">
+                        <a class="header__main-dialog-nav-menu-item-link" href="#"
+                          >Заказать оптом</a
+                        >
+                      </li>
+                      <li class="header__main-dialog-nav-menu-item">
+                        <a class="header__main-dialog-nav-menu-item-link" href="#">Покупателям</a>
+                      </li>
+                      <li class="header__main-dialog-nav-menu-item">
+                        <a class="header__main-dialog-nav-menu-item-link" href="#">Гарантии</a>
+                      </li>
+                      <li class="header__main-dialog-nav-menu-item">
+                        <a class="header__main-dialog-nav-menu-item-link" href="#">Доставка</a>
+                      </li>
+                      <li class="header__main-dialog-nav-menu-item">
+                        <a class="header__main-dialog-nav-menu-item-link" href="#">Оплата</a>
+                      </li>
+                      <li class="header__main-dialog-nav-menu-item">
+                        <a class="header__main-dialog-nav-menu-item-link" href="#">Контакты</a>
+                      </li>
+                    </ul>
+                  </nav>
+
+                  <div class="header__main-dialog-contacts">
+                    <a class="header__main-dialog-contacts-link" href="mailto:dekos@info.com">
+                      dekos@info.com
+                    </a>
+                    <a class="header__main-dialog-contacts-link" href="tel:+79997777777">
+                      +7 999 777-77-77
+                    </a>
+                    <a class="header__main-dialog-contacts-link" href="tel:+79997777777">
+                      +7 999 777-77-77
+                    </a>
+                    <a class="header__main-dialog-contacts-link" href="tel:+79997777777">
+                      +7 999 777-77-77
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="header__main-burger">
+              <button class="header__main-burger-button"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="order">
+        <div class="container">
+          <div class="order__wrapper">
+            <div class="order__main">
+              <div class="order__info">
+                <h2 class="order__info-title">Покупатель</h2>
+
+                <div class="order__info-buyer">
+                  <label class="order__info-formlabel">
+                    <span class="order__info-formlabel-title">Имя Фамилия</span>
+                    <input class="order__info-formlabel-input" type="text" name="name" />
+                  </label>
+
+                  <label class="order__info-formlabel">
+                    <span class="order__info-formlabel-title">Телефон</span>
+                    <input class="order__info-formlabel-input" type="tel" name="phone" />
+                  </label>
+
+                  <label class="order__info-formlabel">
+                    <span class="order__info-formlabel-title">E-mail</span>
+                    <input class="order__info-formlabel-input" type="email" name="email" />
+                  </label>
+                </div>
+
+                <h2 class="order__info-title">Адрес доставки</h2>
+
+                <div class="order__info-address">
+                  <label class="order__info-formlabel">
+                    <span class="order__info-formlabel-title">Страна</span>
+                    <input class="order__info-formlabel-input" type="text" name="country" />
+                  </label>
+
+                  <label class="order__info-formlabel">
+                    <span class="order__info-formlabel-title">Регион</span>
+                    <input class="order__info-formlabel-input" type="text" name="region" />
+                  </label>
+
+                  <label class="order__info-formlabel">
+                    <span class="order__info-formlabel-title">Город</span>
+                    <input class="order__info-formlabel-input" type="text" name="city" />
+                  </label>
+
+                  <label class="order__info-formlabel order__info-formlabel_index">
+                    <span class="order__info-formlabel-title">Индекс</span>
+                    <input class="order__info-formlabel-input" type="text" name="index" />
+                  </label>
+
+                  <label class="order__info-formlabel order__info-formlabel_address">
+                    <span class="order__info-formlabel-title">Адрес</span>
+                    <input class="order__info-formlabel-input" type="text" name="address" />
+                  </label>
+
+                  <label class="order__info-formlabel order__info-formlabel_comment">
+                    <span class="order__info-formlabel-title">Комментарий</span>
+                    <input class="order__info-formlabel-input" type="text" name="comment" />
+                  </label>
+                </div>
+
+                <h2 class="order__info-title">Способы оплаты</h2>
+
+                <div class="order__info-payment">
+                  <label class="order__info-payment-radio order__info-payment-radio_cash">
+                    <input
+                      class="order__info-payment-radio-input"
+                      type="radio"
+                      name="payment"
+                      value="withCash"
+                    />
+                    <div class="order__info-payment-radio-title">Оплата при получении</div>
+                    <div class="order__info-payment-radio-text">
+                      (наличные курьеру,или на пункте самовывоза)
+                    </div>
+                  </label>
+
+                  <label class="order__info-payment-radio order__info-payment-radio_card">
+                    <input
+                      class="order__info-payment-radio-input"
+                      type="radio"
+                      name="payment"
+                      value="withCard"
+                    />
+                    <div class="order__info-payment-radio-title">Картой на сайте</div>
+                    <div class="order__info-payment-radio-text">
+                      Tinkoff Pay, Сбербанк, Альфа банк
+                    </div>
+                  </label>
+                </div>
+
+                <h2 class="order__info-title">Доставка</h2>
+
+                <div class="order__info-delivery">
+                  <label class="order__info-delivery-radio">
+                    <input
+                      class="order__info-delivery-radio-input"
+                      type="radio"
+                      name="delivery"
+                      value="delovye-linii"
+                    />
+                    <figure class="order__info-delivery-radio-icon">
+                      <img
+                        class="order__info-delivery-radio-icon-image"
+                        src="./assets/order/delivery-delovye-linii.png"
+                        alt="delovye-linii"
+                      />
+                    </figure>
+                    <div class="order__info-delivery-radio-title">Деловые Линии</div>
+                  </label>
+
+                  <label class="order__info-delivery-radio">
+                    <input
+                      class="order__info-delivery-radio-input"
+                      type="radio"
+                      name="delivery"
+                      value="sdek"
+                    />
+                    <figure class="order__info-delivery-radio-icon">
+                      <img
+                        class="order__info-delivery-radio-icon-image"
+                        src="./assets/order/delivery-sdek.png"
+                        alt="sdek"
+                      />
+                    </figure>
+                    <div class="order__info-delivery-radio-title">СДЭК</div>
+                  </label>
+
+                  <label class="order__info-delivery-radio">
+                    <input
+                      class="order__info-delivery-radio-input"
+                      type="radio"
+                      name="delivery"
+                      value="samovyvoz"
+                    />
+                    <figure class="order__info-delivery-radio-icon">
+                      <img
+                        class="order__info-delivery-radio-icon-image"
+                        src="./assets/order/delivery-samovyvoz.svg"
+                        alt="samovyvoz"
+                      />
+                    </figure>
+                    <div class="order__info-delivery-radio-title">Самовывоз со склада</div>
+                  </label>
+                </div>
+              </div>
+
+              <div class="order__details">
+                <div class="order__details-promocode">
+                  <input
+                    class="order__details-promocode-input"
+                    type="text"
+                    placeholder="Введите скидочный код"
+                  />
+                  <button class="order__details-promocode-button">Получить</button>
+                </div>
+
+                <ul class="order__details-list">
+                  <li class="order__details-list-item">
+                    <div class="order__details-list-item-name">Товар</div>
+                    <div class="order__details-list-item-price">390 000₽</div>
+                  </li>
+                  <li class="order__details-list-item">
+                    <div class="order__details-list-item-name">Скидка</div>
+                    <div class="order__details-list-item-price">-100 000₽</div>
+                  </li>
+                  <li class="order__details-list-item">
+                    <div class="order__details-list-item-name">Доставка</div>
+                    <div class="order__details-list-item-price">4 000₽</div>
+                  </li>
+                </ul>
+                <div class="order__details-total">
+                  <span class="order__details-total-title">Итого: </span>
+                  <span class="order__details-total-price"> 294.000</span>
+                  <span class="order__details-total-currency">₽</span>
+                </div>
+                <div class="order__details-pay">
+                  <button class="order__details-pay-button">Оплатить</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ads-banners">
+        <div class="container">
+          <div class="ads-banners__wrapper">
+            <div class="ads-banners__sale">
+              <div class="ads-banners__sale-content">
+                <div class="ads-banners__sale-content-title">При оплате по счету</div>
+                <div class="ads-banners__sale-content-text">Для физических лиц: скидка 2%.</div>
+              </div>
+              <figure class="ads-banners__sale-icon">
+                <img
+                  class="ads-banners__sale-icon-image"
+                  src="./assets/ads-banners/sale.svg"
+                  alt="sale"
+                />
+              </figure>
+            </div>
+
+            <div class="ads-banners__discount">
+              <div class="ads-banners__discount-content">
+                <div class="ads-banners__discount-content-title">Скидки от объема покупки</div>
+                <div class="ads-banners__discount-content-text">От 5 рулонов – 2%</div>
+                <div class="ads-banners__discount-content-text">От 10 рулонов – 4%</div>
+                <div class="ads-banners__discount-content-text">От 20 рулонов – 6%</div>
+                <div class="ads-banners__discount-content-text">
+                  Бесплатная доставка от 30 рулонов
+                </div>
+              </div>
+
+              <figure class="ads-banners__discount-icon">
+                <img
+                  class="ads-banners__discount-icon-image"
+                  src="./assets/ads-banners/discount.svg"
+                  alt="discount"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__top">
+            <div class="footer__subscription">
+              <figure class="footer__subscription-logo">
+                <img class="footer__subscription-logo-image" src="./assets/logo.svg" alt="logo" />
+              </figure>
+
+              <div class="footer__subscription-main">
+                <div class="footer__subscription-title">Подписаться на рассылку</div>
+
+                <form class="footer__subscription-form">
+                  <input
+                    class="footer__subscription-form-email"
+                    type="email"
+                    name="email"
+                    placeholder="Почта"
+                  />
+                  <label class="footer__subscription-form-approve">
+                    <input
+                      class="footer__subscription-form-approve-input"
+                      type="checkbox"
+                      name="approve"
+                    />
+                    <div class="footer__subscription-form-approve-text">
+                      Нажимая на кнопку, вы даете согласие на обработку своих
+                      <a class="footer__subscription-form-approve-text-link" href="#"
+                        >персональных данных</a
+                      >
+                    </div>
+                  </label>
+                  <button class="footer__subscription-form-button">Подписаться</button>
+                </form>
+              </div>
+            </div>
+
+            <nav class="footer__nav">
+              <div class="footer__nav-block">
+                <div class="footer__nav-block-title">Информация о компании</div>
+
+                <ul class="footer__nav-block-menu">
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">О компании</a>
+                  </li>
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">Доставка и оплата</a>
+                  </li>
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">Гарантия и сервис</a>
+                  </li>
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">Новости и обзоры</a>
+                  </li>
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">Акции</a>
+                  </li>
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">Осторожно, мошенники</a>
+                  </li>
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">Защита покупки</a>
+                  </li>
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">В кредит</a>
+                  </li>
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">О компании</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="footer__nav-block">
+                <div class="footer__nav-block-title">Обратная связь</div>
+
+                <ul class="footer__nav-block-menu">
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">Отзывы и предложения</a>
+                  </li>
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">Задать вопрос</a>
+                  </li>
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">Отзывы</a>
+                  </li>
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">Пожаловаться директору</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+
+          <div class="footer__center">
+            <div class="footer__contacts">
+              <div class="footer__contacts-title">Контакты</div>
+
+              <div class="footer__contacts-subtitle">Телефон</div>
+
+              <div class="footer__contacts-phones">
+                <a class="footer__contacts-phones-link" href="tel:+78129945333"
+                  >+7 (812) 994-53-33</a
+                >
+                <a class="footer__contacts-phones-link" href="tel:+78129945253"
+                  >+7 (812) 994-52-53</a
+                >
+                <a class="footer__contacts-phones-link" href="tel:+78123132142"
+                  >+7 (812) 313-21-42</a
+                >
+              </div>
+
+              <div class="footer__contacts-subtitle">Адрес</div>
+
+              <div class="footer__contacts-address">
+                г. Санкт-Петербург, ул. Артиллерийская д.1, бизнес-центр “Europe House”, первый
+                этаж.
+              </div>
+
+              <div class="footer__contacts-subtitle">Соц сети</div>
+
+              <div class="footer__contacts-social">
+                <a class="footer__contacts-social-link" href="#">
+                  <img src="./assets/icons/vk.svg" alt="vk" />
+                </a>
+                <a class="footer__contacts-social-link" href="#">
+                  <img src="./assets/icons/youtube.svg" alt="youtube" />
+                </a>
+                <a class="footer__contacts-social-link" href="#">
+                  <img src="./assets/icons/telegram.svg" alt="telegram" />
+                </a>
+              </div>
+            </div>
+
+            <div class="footer__callback">
+              <div class="footer__callback-title">Задать вопрос</div>
+
+              <form class="footer__callback-form">
+                <fieldset class="footer__callback-form-controls">
+                  <div class="footer__callback-form-control footer__callback-form-control_question">
+                    <input
+                      class="footer__callback-form-control-input"
+                      type="text"
+                      name="question"
+                      placeholder="Напишите свой вопрос"
+                    />
+                  </div>
+                  <div class="footer__callback-form-control footer__callback-form-control_phone">
+                    <input
+                      class="footer__callback-form-control-input"
+                      type="tel"
+                      name="phone"
+                      placeholder="Телефон"
+                    />
+                  </div>
+                  <div class="footer__callback-form-control footer__callback-form-control_name">
+                    <input
+                      class="footer__callback-form-control-input"
+                      type="text"
+                      placeholder="Ваше имя"
+                    />
+                  </div>
+                </fieldset>
+
+                <label class="footer__callback-form-approve">
+                  <input
+                    class="footer__callback-form-approve-input"
+                    type="checkbox"
+                    name="approve"
+                  />
+                  <div class="footer__callback-form-approve-text">
+                    Нажимая на кнопку, вы даете согласие на обработку своих
+                    <a class="footer__callback-form-approve-text-link" href="#">
+                      персональных данных
+                    </a>
+                  </div>
+                </label>
+
+                <button class="footer__callback-form-button">Отправить</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="footer__bottom">
+            <div class="footer__info">
+              <a class="footer__info-link" href="#">Политика конфиденциальности</a>
+              <a class="footer__info-link" href="#">Договор оферта</a>
+              <span class="footer__info-copiright">© 2006-2024, Санкт-Петербург, GSM-STORE</span>
+              <span class="footer__info-developer">
+                Создание сайта: интернет-агентство
+                <a class="footer__info-developer-link" href="#">Vizioner.ru</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

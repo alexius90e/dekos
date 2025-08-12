@@ -254,11 +254,13 @@
       border-radius: 30px;
       box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.15);
       transform: translateY(-120vh);
-      background: #fff;
-      
+      background-color: #fff;
+      transition-property: transform;
+      transition-timing-function: ease-out;
+      transition-duration: 0.4s;
     }
 
-    &.active &-body{
+    &.active &-body {
       transform: translateY(0);
     }
 

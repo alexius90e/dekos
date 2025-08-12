@@ -7945,7 +7945,15 @@ textarea {
           box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.15);
   -webkit-transform: translateY(-120vh);
           transform: translateY(-120vh);
-  background: #fff;
+  background-color: #fff;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
 .project-banner__dialog.active .project-banner__dialog-body {
   -webkit-transform: translateY(0);

@@ -93,8 +93,7 @@ allBrandsFilterSortSelectEls.forEach((selectEl) => {
   });
 });
 
-
-// about 
+// about
 
 const aboutVideoItemEls = document.querySelectorAll('.about__videos-item');
 
@@ -107,7 +106,6 @@ aboutVideoItemEls.forEach((aboutVideoItemEl) => {
     }
   });
 });
-
 
 // project-banner
 
@@ -124,7 +122,27 @@ if (projectBannerSwiperEl) {
   });
 }
 
-//
+const projectBannerCallbackForm = document.querySelector('.project-banner__callback-form');
+const projectBannerDialog = document.querySelector('.project-banner__dialog');
+
+if (projectBannerCallbackForm && projectBannerDialog) {
+  projectBannerCallbackForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    event.currentTarget.reset();
+    projectBannerDialog.classList.add('active');
+  });
+
+  projectBannerDialog.addEventListener('click', (event) => {
+    const isLayout = event.target === event.currentTarget;
+    const isClose = event.target.classList.contains('project-banner__dialog-close-button');
+
+    if (isLayout || isClose) {
+      projectBannerDialog.classList.remove('active');
+    }
+  });
+}
+
+// examples
 
 const examplesSlideEls = document.querySelectorAll('.examples__slide');
 

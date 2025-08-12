@@ -223,4 +223,107 @@
       }
     }
   }
+
+  &__dialog {
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-property: background-color;
+    transition-timing-function: ease-out;
+    transition-duration: 0.2s;
+    background-color: rgba($color: #000000, $alpha: 0.2);
+    opacity: 0;
+    pointer-events: none;
+
+    &.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    &-body {
+      max-height: calc(100vh - 40px);
+      max-width: calc(100vw - 40px);
+      width: 1038px;
+      height: fit-content;
+      padding: 24px 24px 20px;
+      box-sizing: border-box;
+      border-radius: 30px;
+      box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.15);
+      transform: translateY(-120vh);
+      background: #fff;
+      
+    }
+
+    &.active &-body{
+      transform: translateY(0);
+    }
+
+    &-content {
+      overflow: auto;
+    }
+
+    &-title {
+      margin: 0 0 28px;
+      font-weight: 600;
+      font-size: 24px;
+      text-transform: capitalize;
+      text-align: center;
+      color: #000;
+    }
+
+    &-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 0 16px;
+
+      &-image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    &-message {
+      margin: 0 0 32px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 100%;
+      text-align: center;
+      color: #000;
+    }
+
+    &-close {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &-button {
+        display: inline-block;
+        max-width: 332px;
+        width: 100%;
+        padding: 14px 32px;
+        box-sizing: border-box;
+        font-weight: 600;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #ffffff;
+        border: none;
+        border-radius: 48px;
+        background-color: #0a23a0;
+        transition-property: background-color;
+        transition-timing-function: ease-out;
+        transition-duration: 0.2s;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #151629;
+        }
+      }
+    }
+  }
 }

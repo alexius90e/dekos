@@ -7902,6 +7902,127 @@ textarea {
   line-height: 120%;
   color: #fff;
 }
+.project-banner__dialog {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  pointer-events: none;
+}
+.project-banner__dialog.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.project-banner__dialog-body {
+  max-height: calc(100vh - 40px);
+  max-width: calc(100vw - 40px);
+  width: 1038px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 24px 24px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.15);
+  -webkit-transform: translateY(-120vh);
+          transform: translateY(-120vh);
+  background: #fff;
+}
+.project-banner__dialog.active .project-banner__dialog-body {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.project-banner__dialog-content {
+  overflow: auto;
+}
+.project-banner__dialog-title {
+  margin: 0 0 28px;
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #000;
+}
+.project-banner__dialog-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 16px;
+}
+.project-banner__dialog-icon-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.project-banner__dialog-message {
+  margin: 0 0 32px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  color: #000;
+}
+.project-banner__dialog-close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.project-banner__dialog-close-button {
+  display: inline-block;
+  max-width: 332px;
+  width: 100%;
+  padding: 14px 32px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  border-radius: 48px;
+  background-color: #0a23a0;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  cursor: pointer;
+}
+.project-banner__dialog-close-button:hover {
+  background-color: #151629;
+}
 
 .project-info {
   margin: 102px 0;
@@ -8280,6 +8401,10 @@ textarea {
   margin: -1px 0 0;
   padding: 58px 0 79px;
   background-color: #151629;
+}
+.examples__wrapper {
+  max-width: 1346px;
+  margin: 0 auto;
 }
 .examples__title {
   margin: 0 0 44px;

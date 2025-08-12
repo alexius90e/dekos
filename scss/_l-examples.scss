@@ -3,6 +3,11 @@
   padding: 58px 0 79px;
   background-color: #151629;
 
+  &__wrapper {
+    max-width: 1346px;
+    margin: 0 auto;
+  }
+
   &__title {
     margin: 0 0 44px;
     font-family: 'Gilroy', sans-serif;

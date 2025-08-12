@@ -7903,6 +7903,210 @@ textarea {
   color: #fff;
 }
 
+.discussion {
+  margin: 40px 0;
+}
+.discussion__wrapper {
+  position: relative;
+  padding: 61px 48px 48px;
+  padding-right: 500px;
+  border-radius: 40px;
+  background-color: #0a23a0;
+}
+@media (max-width: 1400px) {
+  .discussion__wrapper {
+    padding-right: 410px;
+  }
+}
+@media (max-width: 1024px) {
+  .discussion__wrapper {
+    padding: 60px 48px 0;
+  }
+}
+@media (max-width: 768px) {
+  .discussion__wrapper {
+    padding: 48px 24px 0;
+    border-radius: 20px;
+  }
+}
+.discussion__content-title {
+  max-width: 748px;
+  margin: 0 0 16px;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #fff;
+}
+@media (max-width: 1024px) {
+  .discussion__content-title {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .discussion__content-title {
+    margin-bottom: 32px;
+    font-size: 44px;
+  }
+}
+@media (max-width: 576px) {
+  .discussion__content-title {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+}
+.discussion__content-description {
+  margin: 0 0 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: #fff;
+}
+@media (max-width: 1024px) {
+  .discussion__content-description {
+    line-height: 125%;
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .discussion__content-description {
+    font-size: 16px;
+  }
+}
+.discussion__content-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+  min-height: 171px;
+}
+@media (max-width: 1024px) {
+  .discussion__content-form {
+    min-height: auto;
+    margin-bottom: 48px;
+  }
+}
+.discussion__content-form-input {
+  display: inline-block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(50% - 5px);
+          flex: 0 0 calc(50% - 5px);
+  width: 100%;
+  padding: 13px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  outline: none;
+  background: rgba(244, 244, 245, 0.3);
+}
+@media (max-width: 768px) {
+  .discussion__content-form-input {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+}
+.discussion__content-form-input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.discussion__content-form-input::-moz-placeholder {
+  color: #ffffff;
+}
+.discussion__content-form-input:-ms-input-placeholder {
+  color: #ffffff;
+}
+.discussion__content-form-input::-ms-input-placeholder {
+  color: #ffffff;
+}
+.discussion__content-form-input::placeholder {
+  color: #ffffff;
+}
+.discussion__content-form-button {
+  display: inline-block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(50% - 5px);
+          flex: 0 0 calc(50% - 5px);
+  width: 100%;
+  padding: 13px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000;
+  border: 1px solid #0a23a0;
+  border-radius: 50px;
+  background-color: #ffffff;
+  -webkit-transition-property: color, border-color, background-color;
+  transition-property: color, border-color, background-color;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  cursor: pointer;
+}
+@media (max-width: 1024px) {
+  .discussion__content-form-button {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    margin-top: 24px;
+  }
+}
+.discussion__content-form-button:hover {
+  color: #ffffff;
+  border-color: #ffffff;
+  background-color: #0a23a0;
+}
+.discussion__photo {
+  position: absolute;
+  top: -50px;
+  right: 145px;
+  bottom: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+}
+@media (max-width: 1400px) {
+  .discussion__photo {
+    right: 48px;
+  }
+}
+@media (max-width: 1024px) {
+  .discussion__photo {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+}
+.discussion__photo-image {
+  display: block;
+  max-height: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
 .footer {
   padding: 48px 0 0;
   background-color: #f5f5f5;

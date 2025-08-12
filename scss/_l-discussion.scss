@@ -1,0 +1,163 @@
+.discussion {
+  margin: 40px 0;
+
+  &__wrapper {
+    position: relative;
+    padding: 61px 48px 48px;
+    padding-right: 500px;
+    border-radius: 40px;
+    background-color: #0a23a0;
+
+    @include desktop {
+      padding-right: 410px;
+    }
+
+    @include laptop {
+      padding: 60px 48px 0;
+    }
+
+    @include tablet {
+      padding: 48px 24px 0;
+      border-radius: 20px;
+    }
+  }
+
+  &__content {
+    &-title {
+      max-width: 748px;
+      margin: 0 0 16px;
+      font-weight: 900;
+      font-size: 50px;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: #fff;
+
+      @include laptop {
+        text-align: center;
+      }
+
+      @include tablet {
+        margin-bottom: 32px;
+        font-size: 44px;
+      }
+
+      @include mobile {
+        margin-bottom: 20px;
+        font-size: 30px;
+      }
+    }
+
+    &-description {
+      margin: 0 0 30px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 100%;
+      color: #fff;
+
+      @include laptop {
+        line-height: 125%;
+        text-align: center;
+      }
+
+      @include mobile {
+        font-size: 16px;
+      }
+    }
+
+    &-form {
+      display: flex;
+      align-items: start;
+      align-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      min-height: 171px;
+
+      @include laptop {
+        min-height: auto;
+        margin-bottom: 48px;
+      }
+
+      &-input {
+        display: inline-block;
+        flex: 0 0 calc(100% / 2 - 10px / 2);
+        width: 100%;
+        padding: 13px 20px;
+        box-sizing: border-box;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #fff;
+        border: none;
+        border-radius: 40px;
+        outline: none;
+        background: rgba(244, 244, 245, 0.3);
+
+        @include tablet {
+          flex: 1 1 100%;
+        }
+
+        &::placeholder {
+          color: #ffffff;
+        }
+      }
+
+      &-button {
+        display: inline-block;
+        flex: 0 0 calc(100% / 2 - 10px / 2);
+        width: 100%;
+        padding: 13px 20px;
+        box-sizing: border-box;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #000;
+        border: 1px solid #0a23a0;
+        border-radius: 50px;
+        background-color: #ffffff;
+        transition-property: color, border-color, background-color;
+        transition-timing-function: ease-out;
+        transition-duration: 0.2s;
+        cursor: pointer;
+
+        @include laptop {
+          flex: 1 1 100%;
+          margin-top: 24px;
+        }
+
+        &:hover {
+          color: #ffffff;
+          border-color: #ffffff;
+          background-color: #0a23a0;
+        }
+      }
+    }
+  }
+
+  &__photo {
+    position: absolute;
+    top: -50px;
+    right: 145px;
+    bottom: 0;
+    width: fit-content;
+    margin: 0;
+
+    @include desktop {
+      right: 48px;
+    }
+
+    @include laptop {
+      position: static;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    &-image {
+      display: block;
+      max-height: 100%;
+      max-width: 100%;
+      height: 100%;
+    }
+  }
+}

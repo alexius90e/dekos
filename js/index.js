@@ -123,3 +123,17 @@ if (projectBannerSwiperEl) {
     },
   });
 }
+
+//
+
+const examplesSlideEls = document.querySelectorAll('.examples__slide');
+
+examplesSlideEls.forEach((examplesSlideEl) => {
+  examplesSlideEl.addEventListener('click', (event) => {
+    const isPlayBtn = event.target.classList.contains('examples__slide-play-button');
+
+    if (isPlayBtn) {
+      event.currentTarget.classList.add('active');
+    }
+  });
+});

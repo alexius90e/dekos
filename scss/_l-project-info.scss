@@ -78,7 +78,8 @@
     gap: 24px;
 
     @include laptop {
-      flex: 1 1 100%;
+      flex-direction: row-reverse;
+      flex: 0 1 532px;
     }
 
     @include mobile {

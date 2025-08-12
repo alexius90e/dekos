@@ -8003,9 +8003,13 @@ textarea {
 }
 @media (max-width: 1024px) {
   .project-info__gallery {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 532px;
+            flex: 0 1 532px;
   }
 }
 @media (max-width: 576px) {

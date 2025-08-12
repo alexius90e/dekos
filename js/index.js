@@ -92,3 +92,18 @@ allBrandsFilterSortSelectEls.forEach((selectEl) => {
     if (isLayout) event.currentTarget.classList.remove('active');
   });
 });
+
+
+// about 
+
+const aboutVideoItemEls = document.querySelectorAll('.about__videos-item');
+
+aboutVideoItemEls.forEach((aboutVideoItemEl) => {
+  aboutVideoItemEl.addEventListener('click', (event) => {
+    const isPlayBtn = event.target.classList.contains('about__videos-item-play-button');
+
+    if (isPlayBtn) {
+      event.currentTarget.classList.add('active');
+    }
+  });
+});

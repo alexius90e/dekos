@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>КАТАЛОГ СТЕКЛООБОЕВ</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="./js/swiper-bundle.min.js" defer></script>
+    <script src="./js/index.js" defer></script>
+    <script src="./js/catalog.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-wrapper">
+            <nav class="header__top-nav">
+              <ul class="header__top-nav-menu">
+                <li class="header__top-nav-menu-item">
+                  <a class="header__top-nav-menu-item-link" href="#">О компании</a>
+                </li>
+                <li class="header__top-nav-menu-item">
+                  <a class="header__top-nav-menu-item-link" href="#">Наши объекты</a>
+                </li>
+                <li class="header__top-nav-menu-item">
+                  <a class="header__top-nav-menu-item-link" href="#">
+                    Акции
+                    <span class="header__top-nav-menu-item-link-counter">12</span>
+                  </a>
+                </li>
+                <li class="header__top-nav-menu-item">
+                  <a class="header__top-nav-menu-item-link" href="#">Заказать оптом</a>
+                </li>
+                <li class="header__top-nav-menu-item">
+                  <a class="header__top-nav-menu-item-link" href="#">Покупателям</a>
+                </li>
+                <li class="header__top-nav-menu-item">
+                  <a class="header__top-nav-menu-item-link" href="#">Гарантии</a>
+                </li>
+                <li class="header__top-nav-menu-item">
+                  <a class="header__top-nav-menu-item-link" href="#">Доставка</a>
+                </li>
+                <li class="header__top-nav-menu-item">
+                  <a class="header__top-nav-menu-item-link" href="#">Оплата</a>
+                </li>
+                <li class="header__top-nav-menu-item">
+                  <a class="header__top-nav-menu-item-link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="header__top-contacts">
+              <div class="header__top-contacts-email">
+                <a class="header__top-contacts-email-link" href="mailto:dekos@info.com"
+                  >dekos@info.com</a
+                >
+              </div>
+
+              <div class="header__top-contacts-phone">
+                <div class="header__top-contacts-phone-main">
+                  <a class="header__top-contacts-phone-main-link" href="tel:+79997777777">
+                    +7 999 777-77-77
+                  </a>
+                </div>
+
+                <ul class="header__top-contacts-phone-hidden">
+                  <li class="header__top-contacts-phone-hidden-item">
+                    <a class="header__top-contacts-phone-hidden-item-link" href="tel:+79997777777">
+                      +7 999 777-77-77
+                    </a>
+                  </li>
+                  <li class="header__top-contacts-phone-hidden-item">
+                    <a class="header__top-contacts-phone-hidden-item-link" href="tel:+79997777777">
+                      +7 999 777-77-77
+                    </a>
+                  </li>
+                  <li class="header__top-contacts-phone-hidden-item">
+                    <a class="header__top-contacts-phone-hidden-item-link" href="tel:+79997777777">
+                      +7 999 777-77-77
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__main">
+        <div class="container">
+          <div class="header__main-wrapper">
+            <div class="header__main-logo">
+              <a class="header__main-logo-link" href="#">
+                <img class="header__main-logo-link-image" src="./assets/logo.svg" alt="logo" />
+              </a>
+            </div>
+
+            <div class="header__main-dialog">
+              <div class="header__main-dialog-wrapper">
+                <button class="header__main-dialog-close"></button>
+
+                <div class="header__main-dialog-content">
+                  <div class="header__main-dialog-controls">
+                    <div class="header__main-dialog-controls-catalog">
+                      <button class="header__main-dialog-controls-catalog-button">Каталог</button>
+                    </div>
+
+                    <div class="header__main-dialog-controls-search">
+                      <input
+                        class="header__main-dialog-controls-search-input"
+                        type="text"
+                        name="search"
+                        placeholder="Поиск"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="header__main-dialog-buttons">
+                    <button class="header__main-dialog-buttons-item">
+                      <img
+                        class="header__main-dialog-buttons-item-icon"
+                        src="./assets/icons/header-icon-1.svg"
+                        alt="icon"
+                      />
+                      <span class="header__main-dialog-buttons-item-text">Войти</span>
+                    </button>
+                    <button class="header__main-dialog-buttons-item">
+                      <img
+                        class="header__main-dialog-buttons-item-icon"
+                        src="./assets/icons/header-icon-2.svg"
+                        alt="icon"
+                      />
+                      <span class="header__main-dialog-buttons-item-text">Избранное</span>
+                      <span class="header__main-dialog-buttons-item-counter">4</span>
+                    </button>
+                    <button class="header__main-dialog-buttons-item">
+                      <img
+                        class="header__main-dialog-buttons-item-icon"
+                        src="./assets/icons/header-icon-3.svg"
+                        alt="icon"
+                      />
+                      <span class="header__main-dialog-buttons-item-text">Сравнение</span>
+                    </button>
+                    <button class="header__main-dialog-buttons-item">
+                      <img
+                        class="header__main-dialog-buttons-item-icon"
+                        src="./assets/icons/header-icon-4.svg"
+                        alt="icon"
+                      />
+                      <span class="header__main-dialog-buttons-item-text">Корзина</span>
+                      <span class="header__main-dialog-buttons-item-counter">12</span>
+                    </button>
+                  </div>
+
+                  <nav class="header__main-dialog-nav">
+                    <ul class="header__main-dialog-nav-menu">
+                      <li class="header__main-dialog-nav-menu-item">
+                        <a class="header__main-dialog-nav-menu-item-link" href="#">О компании</a>
+                      </li>
+                      <li class="header__main-dialog-nav-menu-item">
+                        <a class="header__main-dialog-nav-menu-item-link" href="#">Наши объекты</a>
+                      </li>
+                      <li class="header__main-dialog-nav-menu-item">
+                        <a class="header__main-dialog-nav-menu-item-link" href="#">
+                          Акции
+                          <span class="header__main-dialog-nav-menu-item-link-counter">12</span>
+                        </a>
+                      </li>
+                      <li class="header__main-dialog-nav-menu-item">
+                        <a class="header__main-dialog-nav-menu-item-link" href="#"
+                          >Заказать оптом</a
+                        >
+                      </li>
+                      <li class="header__main-dialog-nav-menu-item">
+                        <a class="header__main-dialog-nav-menu-item-link" href="#">Покупателям</a>
+                      </li>
+                      <li class="header__main-dialog-nav-menu-item">
+                        <a class="header__main-dialog-nav-menu-item-link" href="#">Гарантии</a>
+                      </li>
+                      <li class="header__main-dialog-nav-menu-item">
+                        <a class="header__main-dialog-nav-menu-item-link" href="#">Доставка</a>
+                      </li>
+                      <li class="header__main-dialog-nav-menu-item">
+                        <a class="header__main-dialog-nav-menu-item-link" href="#">Оплата</a>
+                      </li>
+                      <li class="header__main-dialog-nav-menu-item">
+                        <a class="header__main-dialog-nav-menu-item-link" href="#">Контакты</a>
+                      </li>
+                    </ul>
+                  </nav>
+
+                  <div class="header__main-dialog-contacts">
+                    <a class="header__main-dialog-contacts-link" href="mailto:dekos@info.com">
+                      dekos@info.com
+                    </a>
+                    <a class="header__main-dialog-contacts-link" href="tel:+79997777777">
+                      +7 999 777-77-77
+                    </a>
+                    <a class="header__main-dialog-contacts-link" href="tel:+79997777777">
+                      +7 999 777-77-77
+                    </a>
+                    <a class="header__main-dialog-contacts-link" href="tel:+79997777777">
+                      +7 999 777-77-77
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="header__main-burger">
+              <button class="header__main-burger-button"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="about">
+        <div class="container">
+          <div class="about__top">
+            <div class="about__info">
+              <h2 class="about__info-title">О нас</h2>
+
+              <div class="about__info-description">
+                Компания производит практичные обои с длительным сроком эксплуатации сочетающие
+                комплексную защиту стен с экологической и пожарной безопасностью
+              </div>
+
+              <ul class="about__info-list">
+                <li class="about__info-list-item">
+                  в основе покрытия сверхпрочное кварцевое армированное стекловолокно
+                </li>
+                <li class="about__info-list-item">
+                  усиливают прочность покрытия, блокирует образование и распространение от трещин
+                </li>
+                <li class="about__info-list-item">
+                  укрепляют структурную целостность и поверхностные защитные свойства стен
+                </li>
+                <li class="about__info-list-item">
+                  обеспечивают оптимальную несущую способность и износоустойчивость поверхности
+                </li>
+                <li class="about__info-list-item">
+                  выдерживают разрывные нагрузки свыше 5000 кг на один кв. метр
+                </li>
+                <li class="about__info-list-item">
+                  высшая категория пожарной безопасности: класс КМ0, группа НГ негорючий материал
+                  отвечают требованиям и нормативам Федерального Закона №123-ФЗ
+                </li>
+                <li class="about__info-list-item">
+                  эффективно препятствуют распространению огня, вплоть до самостоятельного затухания
+                  пламени
+                </li>
+                <li class="about__info-list-item">
+                  при нагревании не выделяют токсичные продукты горения, не образуют дыма
+                </li>
+                <li class="about__info-list-item">
+                  эко обои не содержат аллергенов, в качестве сырья применяются природные
+                  минеральные соединения без химически синтезированных потенциально опасных веществ
+                </li>
+                <li class="about__info-list-item">
+                  паропроницаемая структура полотна сохраняет оптимальную влажность без конденсата и
+                  образования грибка или плесени
+                </li>
+                <li class="about__info-list-item">
+                  химически инертный материал, не разрушается под воздействием бытовых кислот и
+                  дезинфекантов
+                </li>
+                <li class="about__info-list-item">
+                  влагостойкие моющиеся обои можно применять в помещениях с повышенной влажностью
+                </li>
+                <li class="about__info-list-item">
+                  применяются в зданиях любой этажности, жилых и коммерческих помещениях, путях
+                  эвакуации
+                </li>
+              </ul>
+            </div>
+
+            <figure class="about__photo">
+              <img class="about__photo-image" src="./assets/about/about-photo.jpg" alt="about" />
+            </figure>
+          </div>
+
+          <div class="about__videos">
+            <div class="about__videos-item">
+              <figure class="about__videos-item-cover">
+                <img
+                  class="about__videos-item-cover-image"
+                  src="./assets/about/about-cover-1.jpg"
+                  alt="gallery"
+                />
+              </figure>
+
+              <div class="about__videos-item-play">
+                <button class="about__videos-item-play-button"></button>
+              </div>
+
+              <div class="about__videos-item-video">
+                <iframe
+                  width="720"
+                  height="405"
+                  src="https://rutube.ru/play/embed/b80b200bde5b7b09d2058378c58177d4"
+                  frameborder="0"
+                  allow="clipboard-write"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="about__videos-item">
+              <figure class="about__videos-item-cover">
+                <img
+                  class="about__videos-item-cover-image"
+                  src="./assets/about/about-cover-2.jpg"
+                  alt="gallery"
+                />
+              </figure>
+
+              <div class="about__videos-item-play">
+                <button class="about__videos-item-play-button"></button>
+              </div>
+
+              <div class="about__videos-item-video">
+                <iframe
+                  width="720"
+                  height="405"
+                  src="https://rutube.ru/play/embed/b80b200bde5b7b09d2058378c58177d4"
+                  frameborder="0"
+                  allow="clipboard-write"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="about__videos-item">
+              <figure class="about__videos-item-cover">
+                <img
+                  class="about__videos-item-cover-image"
+                  src="./assets/about/about-cover-3.jpg"
+                  alt="gallery"
+                />
+              </figure>
+
+              <div class="about__videos-item-play">
+                <button class="about__videos-item-play-button"></button>
+              </div>
+
+              <div class="about__videos-item-video">
+                <iframe
+                  width="720"
+                  height="405"
+                  src="https://rutube.ru/play/embed/b80b200bde5b7b09d2058378c58177d4"
+                  frameborder="0"
+                  allow="clipboard-write"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="about__description">
+            Мы гарантируем не только качество товаров, но и профессиональное отношение к заказчикам
+            от момента первого обращения/консультирования до составления и реализации проекта. Мы
+            сопровождаем заказчика на всех стадиях работы, даем быструю обратную связь, помогаем с
+            выбором и предоставляем консультации по эксплуатации обоев. <br />
+            О нашем профессионализме говорят многочисленные положительные отзывы заказчиков, многие
+            из которых стали нашими постоянными клиентами. Вся продукция, представленная на сайте и
+            материалы, из которой она изготавливается сертифицированы.
+          </div>
+        </div>
+      </section>
+
+      <section class="telegram-news">
+        <div class="container">
+          <div class="telegram-news__wrapper">
+            <div class="telegram-news__content">
+              <h2 class="telegram-news__content-title">
+                Хотите быть первым быть в курсе всех новостей?
+              </h2>
+              <div class="telegram-news__content-description">
+                Короткое описание с указанием боли, потребности или критерия выбора целевой
+                аудитории + призыв к действию оставить контакты
+              </div>
+
+              <div class="telegram-news__content-contact">
+                <button class="telegram-news__content-contact-button">Перейти в телеграм</button>
+              </div>
+            </div>
+
+            <figure class="telegram-news__photo">
+              <img
+                class="telegram-news__photo-image"
+                src="./assets/telegram-news/telegram-news-photo.png"
+                alt="telegram-news"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__top">
+            <div class="footer__subscription">
+              <figure class="footer__subscription-logo">
+                <img class="footer__subscription-logo-image" src="./assets/logo.svg" alt="logo" />
+              </figure>
+
+              <div class="footer__subscription-main">
+                <div class="footer__subscription-title">Подписаться на рассылку</div>
+
+                <form class="footer__subscription-form">
+                  <input
+                    class="footer__subscription-form-email"
+                    type="email"
+                    name="email"
+                    placeholder="Почта"
+                  />
+                  <label class="footer__subscription-form-approve">
+                    <input
+                      class="footer__subscription-form-approve-input"
+                      type="checkbox"
+                      name="approve"
+                    />
+                    <div class="footer__subscription-form-approve-text">
+                      Нажимая на кнопку, вы даете согласие на обработку своих
+                      <a class="footer__subscription-form-approve-text-link" href="#"
+                        >персональных данных</a
+                      >
+                    </div>
+                  </label>
+                  <button class="footer__subscription-form-button">Подписаться</button>
+                </form>
+              </div>
+            </div>
+
+            <nav class="footer__nav">
+              <div class="footer__nav-block">
+                <div class="footer__nav-block-title">Информация о компании</div>
+
+                <ul class="footer__nav-block-menu">
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">О компании</a>
+                  </li>
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">Доставка и оплата</a>
+                  </li>
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">Гарантия и сервис</a>
+                  </li>
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">Новости и обзоры</a>
+                  </li>
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">Акции</a>
+                  </li>
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">Осторожно, мошенники</a>
+                  </li>
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">Защита покупки</a>
+                  </li>
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">В кредит</a>
+                  </li>
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">О компании</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="footer__nav-block">
+                <div class="footer__nav-block-title">Обратная связь</div>
+
+                <ul class="footer__nav-block-menu">
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">Отзывы и предложения</a>
+                  </li>
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">Задать вопрос</a>
+                  </li>
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">Отзывы</a>
+                  </li>
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">Пожаловаться директору</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+
+          <div class="footer__center">
+            <div class="footer__contacts">
+              <div class="footer__contacts-title">Контакты</div>
+
+              <div class="footer__contacts-subtitle">Телефон</div>
+
+              <div class="footer__contacts-phones">
+                <a class="footer__contacts-phones-link" href="tel:+78129945333"
+                  >+7 (812) 994-53-33</a
+                >
+                <a class="footer__contacts-phones-link" href="tel:+78129945253"
+                  >+7 (812) 994-52-53</a
+                >
+                <a class="footer__contacts-phones-link" href="tel:+78123132142"
+                  >+7 (812) 313-21-42</a
+                >
+              </div>
+
+              <div class="footer__contacts-subtitle">Адрес</div>
+
+              <div class="footer__contacts-address">
+                г. Санкт-Петербург, ул. Артиллерийская д.1, бизнес-центр “Europe House”, первый
+                этаж.
+              </div>
+
+              <div class="footer__contacts-subtitle">Соц сети</div>
+
+              <div class="footer__contacts-social">
+                <a class="footer__contacts-social-link" href="#">
+                  <img src="./assets/icons/vk.svg" alt="vk" />
+                </a>
+                <a class="footer__contacts-social-link" href="#">
+                  <img src="./assets/icons/youtube.svg" alt="youtube" />
+                </a>
+                <a class="footer__contacts-social-link" href="#">
+                  <img src="./assets/icons/telegram.svg" alt="telegram" />
+                </a>
+              </div>
+            </div>
+
+            <div class="footer__callback">
+              <div class="footer__callback-title">Задать вопрос</div>
+
+              <form class="footer__callback-form">
+                <fieldset class="footer__callback-form-controls">
+                  <div class="footer__callback-form-control footer__callback-form-control_question">
+                    <input
+                      class="footer__callback-form-control-input"
+                      type="text"
+                      name="question"
+                      placeholder="Напишите свой вопрос"
+                    />
+                  </div>
+                  <div class="footer__callback-form-control footer__callback-form-control_phone">
+                    <input
+                      class="footer__callback-form-control-input"
+                      type="tel"
+                      name="phone"
+                      placeholder="Телефон"
+                    />
+                  </div>
+                  <div class="footer__callback-form-control footer__callback-form-control_name">
+                    <input
+                      class="footer__callback-form-control-input"
+                      type="text"
+                      placeholder="Ваше имя"
+                    />
+                  </div>
+                </fieldset>
+
+                <label class="footer__callback-form-approve">
+                  <input
+                    class="footer__callback-form-approve-input"
+                    type="checkbox"
+                    name="approve"
+                  />
+                  <div class="footer__callback-form-approve-text">
+                    Нажимая на кнопку, вы даете согласие на обработку своих
+                    <a class="footer__callback-form-approve-text-link" href="#">
+                      персональных данных
+                    </a>
+                  </div>
+                </label>
+
+                <button class="footer__callback-form-button">Отправить</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="footer__bottom">
+            <div class="footer__info">
+              <a class="footer__info-link" href="#">Политика конфиденциальности</a>
+              <a class="footer__info-link" href="#">Договор оферта</a>
+              <span class="footer__info-copiright">© 2006-2024, Санкт-Петербург, GSM-STORE</span>
+              <span class="footer__info-developer">
+                Создание сайта: интернет-агентство
+                <a class="footer__info-developer-link" href="#">Vizioner.ru</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="./js/swiper-bundle.min.js" defer></script>
+    <script src="./js/index.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-wrapper">
+            <nav class="header__top-nav">
+              <ul class="header__top-nav-menu">
+                <li class="header__top-nav-menu-item">
+                  <a class="header__top-nav-menu-item-link" href="#">О компании</a>
+                </li>
+                <li class="header__top-nav-menu-item">
+                  <a class="header__top-nav-menu-item-link" href="#">Наши объекты</a>
+                </li>
+                <li class="header__top-nav-menu-item">
+                  <a class="header__top-nav-menu-item-link" href="#">
+                    Акции
+                    <span class="header__top-nav-menu-item-link-counter">12</span>
+                  </a>
+                </li>
+                <li class="header__top-nav-menu-item">
+                  <a class="header__top-nav-menu-item-link" href="#">Заказать оптом</a>
+                </li>
+                <li class="header__top-nav-menu-item">
+                  <a class="header__top-nav-menu-item-link" href="#">Покупателям</a>
+                </li>
+                <li class="header__top-nav-menu-item">
+                  <a class="header__top-nav-menu-item-link" href="#">Гарантии</a>
+                </li>
+                <li class="header__top-nav-menu-item">
+                  <a class="header__top-nav-menu-item-link" href="#">Доставка</a>
+                </li>
+                <li class="header__top-nav-menu-item">
+                  <a class="header__top-nav-menu-item-link" href="#">Оплата</a>
+                </li>
+                <li class="header__top-nav-menu-item">
+                  <a class="header__top-nav-menu-item-link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="header__top-contacts">
+              <div class="header__top-contacts-email">
+                <a class="header__top-contacts-email-link" href="mailto:dekos@info.com"
+                  >dekos@info.com</a
+                >
+              </div>
+
+              <div class="header__top-contacts-phone">
+                <div class="header__top-contacts-phone-main">
+                  <a class="header__top-contacts-phone-main-link" href="tel:+79997777777">
+                    +7 999 777-77-77
+                  </a>
+                </div>
+
+                <ul class="header__top-contacts-phone-hidden">
+                  <li class="header__top-contacts-phone-hidden-item">
+                    <a class="header__top-contacts-phone-hidden-item-link" href="tel:+79997777777">
+                      +7 999 777-77-77
+                    </a>
+                  </li>
+                  <li class="header__top-contacts-phone-hidden-item">
+                    <a class="header__top-contacts-phone-hidden-item-link" href="tel:+79997777777">
+                      +7 999 777-77-77
+                    </a>
+                  </li>
+                  <li class="header__top-contacts-phone-hidden-item">
+                    <a class="header__top-contacts-phone-hidden-item-link" href="tel:+79997777777">
+                      +7 999 777-77-77
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__main">
+        <div class="container">
+          <div class="header__main-wrapper">
+            <div class="header__main-logo">
+              <a class="header__main-logo-link" href="#">
+                <img class="header__main-logo-link-image" src="./assets/logo.svg" alt="logo" />
+              </a>
+            </div>
+
+            <div class="header__main-dialog">
+              <div class="header__main-dialog-wrapper">
+                <button class="header__main-dialog-close"></button>
+
+                <div class="header__main-dialog-content">
+                  <div class="header__main-dialog-controls">
+                    <div class="header__main-dialog-controls-catalog">
+                      <button class="header__main-dialog-controls-catalog-button">Каталог</button>
+                    </div>
+
+                    <div class="header__main-dialog-controls-search">
+                      <input
+                        class="header__main-dialog-controls-search-input"
+                        type="text"
+                        name="search"
+                        placeholder="Поиск"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="header__main-dialog-buttons">
+                    <button class="header__main-dialog-buttons-item">
+                      <img
+                        class="header__main-dialog-buttons-item-icon"
+                        src="./assets/icons/header-icon-1.svg"
+                        alt="icon"
+                      />
+                      <span class="header__main-dialog-buttons-item-text">Войти</span>
+                    </button>
+                    <button class="header__main-dialog-buttons-item">
+                      <img
+                        class="header__main-dialog-buttons-item-icon"
+                        src="./assets/icons/header-icon-2.svg"
+                        alt="icon"
+                      />
+                      <span class="header__main-dialog-buttons-item-text">Избранное</span>
+                      <span class="header__main-dialog-buttons-item-counter">4</span>
+                    </button>
+                    <button class="header__main-dialog-buttons-item">
+                      <img
+                        class="header__main-dialog-buttons-item-icon"
+                        src="./assets/icons/header-icon-3.svg"
+                        alt="icon"
+                      />
+                      <span class="header__main-dialog-buttons-item-text">Сравнение</span>
+                    </button>
+                    <button class="header__main-dialog-buttons-item">
+                      <img
+                        class="header__main-dialog-buttons-item-icon"
+                        src="./assets/icons/header-icon-4.svg"
+                        alt="icon"
+                      />
+                      <span class="header__main-dialog-buttons-item-text">Корзина</span>
+                      <span class="header__main-dialog-buttons-item-counter">12</span>
+                    </button>
+                  </div>
+
+                  <nav class="header__main-dialog-nav">
+                    <ul class="header__main-dialog-nav-menu">
+                      <li class="header__main-dialog-nav-menu-item">
+                        <a class="header__main-dialog-nav-menu-item-link" href="#">О компании</a>
+                      </li>
+                      <li class="header__main-dialog-nav-menu-item">
+                        <a class="header__main-dialog-nav-menu-item-link" href="#">Наши объекты</a>
+                      </li>
+                      <li class="header__main-dialog-nav-menu-item">
+                        <a class="header__main-dialog-nav-menu-item-link" href="#">
+                          Акции
+                          <span class="header__main-dialog-nav-menu-item-link-counter">12</span>
+                        </a>
+                      </li>
+                      <li class="header__main-dialog-nav-menu-item">
+                        <a class="header__main-dialog-nav-menu-item-link" href="#"
+                          >Заказать оптом</a
+                        >
+                      </li>
+                      <li class="header__main-dialog-nav-menu-item">
+                        <a class="header__main-dialog-nav-menu-item-link" href="#">Покупателям</a>
+                      </li>
+                      <li class="header__main-dialog-nav-menu-item">
+                        <a class="header__main-dialog-nav-menu-item-link" href="#">Гарантии</a>
+                      </li>
+                      <li class="header__main-dialog-nav-menu-item">
+                        <a class="header__main-dialog-nav-menu-item-link" href="#">Доставка</a>
+                      </li>
+                      <li class="header__main-dialog-nav-menu-item">
+                        <a class="header__main-dialog-nav-menu-item-link" href="#">Оплата</a>
+                      </li>
+                      <li class="header__main-dialog-nav-menu-item">
+                        <a class="header__main-dialog-nav-menu-item-link" href="#">Контакты</a>
+                      </li>
+                    </ul>
+                  </nav>
+
+                  <div class="header__main-dialog-contacts">
+                    <a class="header__main-dialog-contacts-link" href="mailto:dekos@info.com">
+                      dekos@info.com
+                    </a>
+                    <a class="header__main-dialog-contacts-link" href="tel:+79997777777">
+                      +7 999 777-77-77
+                    </a>
+                    <a class="header__main-dialog-contacts-link" href="tel:+79997777777">
+                      +7 999 777-77-77
+                    </a>
+                    <a class="header__main-dialog-contacts-link" href="tel:+79997777777">
+                      +7 999 777-77-77
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="header__main-burger">
+              <button class="header__main-burger-button"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="project-banner">
+        <div class="container">
+          <h2 class="project-banner__title">Фотообои</h2>
+
+          <div class="project-banner__slider">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="project-banner__slide">
+                    <figure class="project-banner__slide-photo">
+                      <img
+                        class="project-banner__slide-photo-image"
+                        src="./assets/project-banner/banner.jpg"
+                        alt="banner"
+                      />
+                    </figure>
+
+                    <div class="project-banner__slide-content">
+                      <figure class="project-banner__slide-content-icon">
+                        <img
+                          class="project-banner__slide-content-icon-image"
+                          src="./assets/project-banner/icon.svg"
+                          alt="banner"
+                        />
+                      </figure>
+                      <div class="project-banner__slide-content-text">
+                        Potter ipsum wand elf parchment wingardium. Cup no metamorphimagus umbridge
+                        owl stan dementors seek horntail.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="project-banner__slide">
+                    <figure class="project-banner__slide-photo">
+                      <img
+                        class="project-banner__slide-photo-image"
+                        src="./assets/project-banner/banner.jpg"
+                        alt="banner"
+                      />
+                    </figure>
+
+                    <div class="project-banner__slide-content">
+                      <figure class="project-banner__slide-content-icon">
+                        <img
+                          class="project-banner__slide-content-icon-image"
+                          src="./assets/project-banner/icon.svg"
+                          alt="banner"
+                        />
+                      </figure>
+                      <div class="project-banner__slide-content-text">
+                        Potter ipsum wand elf parchment wingardium. Cup no metamorphimagus umbridge
+                        owl stan dementors seek horntail.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="project-banner__slide">
+                    <figure class="project-banner__slide-photo">
+                      <img
+                        class="project-banner__slide-photo-image"
+                        src="./assets/project-banner/banner.jpg"
+                        alt="banner"
+                      />
+                    </figure>
+
+                    <div class="project-banner__slide-content">
+                      <figure class="project-banner__slide-content-icon">
+                        <img
+                          class="project-banner__slide-content-icon-image"
+                          src="./assets/project-banner/icon.svg"
+                          alt="banner"
+                        />
+                      </figure>
+                      <div class="project-banner__slide-content-text">
+                        Potter ipsum wand elf parchment wingardium. Cup no metamorphimagus umbridge
+                        owl stan dementors seek horntail.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="project-banner__callback">
+              <div class="project-banner__callback-title">Обсудить проект</div>
+
+              <form class="project-banner__callback-form">
+                <input
+                  class="project-banner__callback-form-input"
+                  type="text"
+                  name="name"
+                  placeholder="Имя"
+                  required
+                />
+                <input
+                  class="project-banner__callback-form-input"
+                  type="tel"
+                  name="phone"
+                  placeholder="Телефон"
+                  required
+                />
+                <button class="project-banner__callback-form-button">Обсудить проект</button>
+              </form>
+
+              <div class="project-banner__callback-offer">
+                <button class="project-banner__callback-offer-button">Получить КП</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="process">
+        <div class="container">
+          <h2 class="process__title">Обзор процесса производства</h2>
+
+          <div class="process__steps">
+            <div class="process__step">
+              <figure class="process__step-icon">
+                <img
+                  class="process__step-icon-image"
+                  src="./assets/process/process-icon-1.png"
+                  alt="step"
+                />
+              </figure>
+              <div class="process__step-details">
+                <div class="process__step-details-title">Формирование стеклянных заготовок</div>
+                <div class="process__step-details-description">
+                  Создание основы из сырья высокого качества.
+                </div>
+              </div>
+            </div>
+
+            <div class="process__step">
+              <figure class="process__step-icon">
+                <img
+                  class="process__step-icon-image"
+                  src="./assets/process/process-icon-2.png"
+                  alt="step"
+                />
+              </figure>
+              <div class="process__step-details">
+                <div class="process__step-details-title">Производство стеклянных волокон</div>
+                <div class="process__step-details-description">
+                  Переработка заготовок в тончайшие прочные волокна.
+                </div>
+              </div>
+            </div>
+
+            <div class="process__step">
+              <figure class="process__step-icon">
+                <img
+                  class="process__step-icon-image"
+                  src="./assets/process/process-icon-3.png"
+                  alt="step"
+                />
+              </figure>
+              <div class="process__step-details">
+                <div class="process__step-details-title">качество стеклоткани</div>
+                <div class="process__step-details-description">
+                  Формирование прочного полотна с заданной текстурой.
+                </div>
+              </div>
+            </div>
+
+            <div class="process__step">
+              <figure class="process__step-icon">
+                <img
+                  class="process__step-icon-image"
+                  src="./assets/process/process-icon-4.png"
+                  alt="step"
+                />
+              </figure>
+              <div class="process__step-details">
+                <div class="process__step-details-title">Пропитка специальным составом</div>
+                <div class="process__step-details-description">
+                  Улучшение прочности, влагостойкости и адгезии обоев.
+                </div>
+              </div>
+            </div>
+
+            <div class="process__step">
+              <figure class="process__step-icon">
+                <img
+                  class="process__step-icon-image"
+                  src="./assets/process/process-icon-5.png"
+                  alt="step"
+                />
+              </figure>
+              <div class="process__step-details">
+                <div class="process__step-details-title">Намотка и упаковка</div>
+                <div class="process__step-details-description">
+                  Готовая продукция аккуратно наматывается в рулоны и упаковывается.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <div class="container">
+          <h2 class="gallery__title">Галлерея</h2>
+
+          <div class="gallery__slider">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="gallery__slide">
+                    <figure class="gallery__slide-photo">
+                      <img
+                        class="gallery__slide-photo-image"
+                        src="./assets/gallery/gallery-1.jpg"
+                        alt="gallery"
+                      />
+                    </figure>
+
+                    <a class="gallery__slide-link gallery__slide-link_left" href="#">
+                      <span class="gallery__slide-link-name">Dekos Elegance</span>
+                      <span class="gallery__slide-link-price">1 912 ₽</span>
+                      <span class="gallery__slide-link-icon"></span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="gallery__slide">
+                    <figure class="gallery__slide-photo">
+                      <img
+                        class="gallery__slide-photo-image"
+                        src="./assets/gallery/gallery-2.jpg"
+                        alt="gallery"
+                      />
+                    </figure>
+
+                    <a class="gallery__slide-link gallery__slide-link_right" href="#">
+                      <span class="gallery__slide-link-name">Dekos Nature Touch</span>
+                      <span class="gallery__slide-link-price">3 000 ₽</span>
+                      <span class="gallery__slide-link-icon"></span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="gallery__slide">
+                    <figure class="gallery__slide-photo">
+                      <img
+                        class="gallery__slide-photo-image"
+                        src="./assets/gallery/gallery-3.jpg"
+                        alt="gallery"
+                      />
+                    </figure>
+
+                    <div class="gallery__slide-play">
+                      <button class="gallery__slide-play-button"></button>
+                    </div>
+
+                    <div class="gallery__slide-video">
+                      <iframe
+                        width="720"
+                        height="405"
+                        src="https://rutube.ru/play/embed/a5628f9d0eb7a6fada3ccee1b96493d2"
+                        frameborder="0"
+                        allow="clipboard-write"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="gallery__slide">
+                    <figure class="gallery__slide-photo">
+                      <img
+                        class="gallery__slide-photo-image"
+                        src="./assets/gallery/gallery-4.jpg"
+                        alt="gallery"
+                      />
+                    </figure>
+
+                    <a class="gallery__slide-link gallery__slide-link_center" href="#">
+                      <span class="gallery__slide-link-name">Dekos Elegance</span>
+                      <span class="gallery__slide-link-price">1 912 ₽</span>
+                      <span class="gallery__slide-link-icon"></span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="gallery__slide">
+                    <figure class="gallery__slide-photo">
+                      <img
+                        class="gallery__slide-photo-image"
+                        src="./assets/gallery/gallery-1.jpg"
+                        alt="gallery"
+                      />
+                    </figure>
+
+                    <a class="gallery__slide-link gallery__slide-link_left" href="#">
+                      <span class="gallery__slide-link-name">Dekos Elegance</span>
+                      <span class="gallery__slide-link-price">1 912 ₽</span>
+                      <span class="gallery__slide-link-icon"></span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="gallery__slide">
+                    <figure class="gallery__slide-photo">
+                      <img
+                        class="gallery__slide-photo-image"
+                        src="./assets/gallery/gallery-2.jpg"
+                        alt="gallery"
+                      />
+                    </figure>
+
+                    <a class="gallery__slide-link gallery__slide-link_right" href="#">
+                      <span class="gallery__slide-link-name">Dekos Nature Touch</span>
+                      <span class="gallery__slide-link-price">3 000 ₽</span>
+                      <span class="gallery__slide-link-icon"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="container">
+          <h2 class="reviews__title">Отзывы</h2>
+
+          <div class="reviews__cards">
+            <div class="reviews__card">
+              <div class="reviews__card-client">
+                <figure class="reviews__card-client-photo">
+                  <img
+                    class="reviews__card-client-photo-image"
+                    src="./assets/reviews/client.png"
+                    alt="client"
+                  />
+                </figure>
+
+                <div class="reviews__card-client-info">
+                  <div class="reviews__card-client-info-name">Адрей Сиванов</div>
+                  <div class="reviews__card-client-info-location">Москва</div>
+                  <div class="reviews__card-client-info-rate" data-rate="5">
+                    <span class="reviews__card-client-info-rate-star"></span>
+                    <span class="reviews__card-client-info-rate-star"></span>
+                    <span class="reviews__card-client-info-rate-star"></span>
+                    <span class="reviews__card-client-info-rate-star"></span>
+                    <span class="reviews__card-client-info-rate-star"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="reviews__card-title">Отзыв клиента:</div>
+              <div class="reviews__card-review">
+                Potter ipsum again dog hunt spine errol heir firs’ locket gillywater feint hexed
+                twin pigwidgeon servant quaffle fairy horcrux with no dirt beuxbatons eyes
+                headmaster .
+              </div>
+            </div>
+
+            <div class="reviews__card">
+              <div class="reviews__card-client">
+                <figure class="reviews__card-client-photo">
+                  <img
+                    class="reviews__card-client-photo-image"
+                    src="./assets/reviews/client.png"
+                    alt="client"
+                  />
+                </figure>
+
+                <div class="reviews__card-client-info">
+                  <div class="reviews__card-client-info-name">Адрей Сиванов</div>
+                  <div class="reviews__card-client-info-location">Москва</div>
+                  <div class="reviews__card-client-info-rate" data-rate="5">
+                    <span class="reviews__card-client-info-rate-star"></span>
+                    <span class="reviews__card-client-info-rate-star"></span>
+                    <span class="reviews__card-client-info-rate-star"></span>
+                    <span class="reviews__card-client-info-rate-star"></span>
+                    <span class="reviews__card-client-info-rate-star"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="reviews__card-title">Отзыв клиента:</div>
+              <div class="reviews__card-review">
+                Potter ipsum again dog hunt spine errol heir firs’ locket gillywater feint hexed
+                twin pigwidgeon servant quaffle fairy horcrux with
+              </div>
+
+              <div class="reviews__card-more">
+                <a class="reviews__card-more-link" href="#">Читать дальше</a>
+              </div>
+            </div>
+
+            <div class="reviews__card">
+              <div class="reviews__card-client">
+                <figure class="reviews__card-client-photo">
+                  <img
+                    class="reviews__card-client-photo-image"
+                    src="./assets/reviews/client.png"
+                    alt="client"
+                  />
+                </figure>
+
+                <div class="reviews__card-client-info">
+                  <div class="reviews__card-client-info-name">Адрей Сиванов</div>
+                  <div class="reviews__card-client-info-location">Москва</div>
+                  <div class="reviews__card-client-info-rate" data-rate="5">
+                    <span class="reviews__card-client-info-rate-star"></span>
+                    <span class="reviews__card-client-info-rate-star"></span>
+                    <span class="reviews__card-client-info-rate-star"></span>
+                    <span class="reviews__card-client-info-rate-star"></span>
+                    <span class="reviews__card-client-info-rate-star"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="reviews__card-title">Отзыв клиента:</div>
+              <div class="reviews__card-review">
+                Potter ipsum again dog hunt spine errol heir firs’ locket gillywater feint hexed
+                twin pigwidgeon servant quaffle fairy horcrux with no dirt beuxbatons eyes
+                headmaster .
+              </div>
+            </div>
+
+            <div class="reviews__card">
+              <div class="reviews__card-client">
+                <figure class="reviews__card-client-photo">
+                  <img
+                    class="reviews__card-client-photo-image"
+                    src="./assets/reviews/client.png"
+                    alt="client"
+                  />
+                </figure>
+
+                <div class="reviews__card-client-info">
+                  <div class="reviews__card-client-info-name">Адрей Сиванов</div>
+                  <div class="reviews__card-client-info-location">Москва</div>
+                  <div class="reviews__card-client-info-rate" data-rate="5">
+                    <span class="reviews__card-client-info-rate-star"></span>
+                    <span class="reviews__card-client-info-rate-star"></span>
+                    <span class="reviews__card-client-info-rate-star"></span>
+                    <span class="reviews__card-client-info-rate-star"></span>
+                    <span class="reviews__card-client-info-rate-star"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="reviews__card-title">Отзыв клиента:</div>
+              <div class="reviews__card-review">
+                Potter ipsum again dog hunt spine errol heir firs’ locket gillywater feint hexed
+                twin pigwidgeon servant quaffle fairy horcrux with
+              </div>
+
+              <div class="reviews__card-more">
+                <a class="reviews__card-more-link" href="#">Читать дальше</a>
+              </div>
+            </div>
+
+            <div class="reviews__card">
+              <div class="reviews__card-client">
+                <figure class="reviews__card-client-photo">
+                  <img
+                    class="reviews__card-client-photo-image"
+                    src="./assets/reviews/client.png"
+                    alt="client"
+                  />
+                </figure>
+
+                <div class="reviews__card-client-info">
+                  <div class="reviews__card-client-info-name">Адрей Сиванов</div>
+                  <div class="reviews__card-client-info-location">Москва</div>
+                  <div class="reviews__card-client-info-rate" data-rate="5">
+                    <span class="reviews__card-client-info-rate-star"></span>
+                    <span class="reviews__card-client-info-rate-star"></span>
+                    <span class="reviews__card-client-info-rate-star"></span>
+                    <span class="reviews__card-client-info-rate-star"></span>
+                    <span class="reviews__card-client-info-rate-star"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="reviews__card-title">Отзыв клиента:</div>
+              <div class="reviews__card-review">
+                Potter ipsum again dog hunt spine errol heir firs’ locket gillywater feint hexed
+                twin pigwidgeon servant quaffle fairy horcrux with no dirt beuxbatons eyes
+                headmaster .
+              </div>
+            </div>
+          </div>
+
+          <div class="reviews__add">
+            <button class="reviews__add-button">Написать отзыв</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__top">
+            <div class="footer__subscription">
+              <figure class="footer__subscription-logo">
+                <img class="footer__subscription-logo-image" src="./assets/logo.svg" alt="logo" />
+              </figure>
+
+              <div class="footer__subscription-main">
+                <div class="footer__subscription-title">Подписаться на рассылку</div>
+
+                <form class="footer__subscription-form">
+                  <input
+                    class="footer__subscription-form-email"
+                    type="email"
+                    name="email"
+                    placeholder="Почта"
+                  />
+                  <label class="footer__subscription-form-approve">
+                    <input
+                      class="footer__subscription-form-approve-input"
+                      type="checkbox"
+                      name="approve"
+                    />
+                    <div class="footer__subscription-form-approve-text">
+                      Нажимая на кнопку, вы даете согласие на обработку своих
+                      <a class="footer__subscription-form-approve-text-link" href="#"
+                        >персональных данных</a
+                      >
+                    </div>
+                  </label>
+                  <button class="footer__subscription-form-button">Подписаться</button>
+                </form>
+              </div>
+            </div>
+
+            <nav class="footer__nav">
+              <div class="footer__nav-block">
+                <div class="footer__nav-block-title">Информация о компании</div>
+
+                <ul class="footer__nav-block-menu">
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">О компании</a>
+                  </li>
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">Доставка и оплата</a>
+                  </li>
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">Гарантия и сервис</a>
+                  </li>
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">Новости и обзоры</a>
+                  </li>
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">Акции</a>
+                  </li>
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">Осторожно, мошенники</a>
+                  </li>
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">Защита покупки</a>
+                  </li>
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">В кредит</a>
+                  </li>
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">О компании</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="footer__nav-block">
+                <div class="footer__nav-block-title">Обратная связь</div>
+
+                <ul class="footer__nav-block-menu">
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">Отзывы и предложения</a>
+                  </li>
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">Задать вопрос</a>
+                  </li>
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">Отзывы</a>
+                  </li>
+                  <li class="footer__nav-block-menu-item">
+                    <a class="footer__nav-block-menu-item-link" href="#">Пожаловаться директору</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+
+          <div class="footer__center">
+            <div class="footer__contacts">
+              <div class="footer__contacts-title">Контакты</div>
+
+              <div class="footer__contacts-subtitle">Телефон</div>
+
+              <div class="footer__contacts-phones">
+                <a class="footer__contacts-phones-link" href="tel:+78129945333"
+                  >+7 (812) 994-53-33</a
+                >
+                <a class="footer__contacts-phones-link" href="tel:+78129945253"
+                  >+7 (812) 994-52-53</a
+                >
+                <a class="footer__contacts-phones-link" href="tel:+78123132142"
+                  >+7 (812) 313-21-42</a
+                >
+              </div>
+
+              <div class="footer__contacts-subtitle">Адрес</div>
+
+              <div class="footer__contacts-address">
+                г. Санкт-Петербург, ул. Артиллерийская д.1, бизнес-центр “Europe House”, первый
+                этаж.
+              </div>
+
+              <div class="footer__contacts-subtitle">Соц сети</div>
+
+              <div class="footer__contacts-social">
+                <a class="footer__contacts-social-link" href="#">
+                  <img src="./assets/icons/vk.svg" alt="vk" />
+                </a>
+                <a class="footer__contacts-social-link" href="#">
+                  <img src="./assets/icons/youtube.svg" alt="youtube" />
+                </a>
+                <a class="footer__contacts-social-link" href="#">
+                  <img src="./assets/icons/telegram.svg" alt="telegram" />
+                </a>
+              </div>
+            </div>
+
+            <div class="footer__callback">
+              <div class="footer__callback-title">Задать вопрос</div>
+
+              <form class="footer__callback-form">
+                <fieldset class="footer__callback-form-controls">
+                  <div class="footer__callback-form-control footer__callback-form-control_question">
+                    <input
+                      class="footer__callback-form-control-input"
+                      type="text"
+                      name="question"
+                      placeholder="Напишите свой вопрос"
+                    />
+                  </div>
+                  <div class="footer__callback-form-control footer__callback-form-control_phone">
+                    <input
+                      class="footer__callback-form-control-input"
+                      type="tel"
+                      name="phone"
+                      placeholder="Телефон"
+                    />
+                  </div>
+                  <div class="footer__callback-form-control footer__callback-form-control_name">
+                    <input
+                      class="footer__callback-form-control-input"
+                      type="text"
+                      placeholder="Ваше имя"
+                    />
+                  </div>
+                </fieldset>
+
+                <label class="footer__callback-form-approve">
+                  <input
+                    class="footer__callback-form-approve-input"
+                    type="checkbox"
+                    name="approve"
+                  />
+                  <div class="footer__callback-form-approve-text">
+                    Нажимая на кнопку, вы даете согласие на обработку своих
+                    <a class="footer__callback-form-approve-text-link" href="#">
+                      персональных данных
+                    </a>
+                  </div>
+                </label>
+
+                <button class="footer__callback-form-button">Отправить</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="footer__bottom">
+            <div class="footer__info">
+              <a class="footer__info-link" href="#">Политика конфиденциальности</a>
+              <a class="footer__info-link" href="#">Договор оферта</a>
+              <span class="footer__info-copiright">© 2006-2024, Санкт-Петербург, GSM-STORE</span>
+              <span class="footer__info-developer">
+                Создание сайта: интернет-агентство
+                <a class="footer__info-developer-link" href="#">Vizioner.ru</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

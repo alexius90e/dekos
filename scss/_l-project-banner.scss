@@ -1,0 +1,226 @@
+.project-banner {
+  margin: 13px 0 35px;
+
+  &__title {
+    margin: 0 0 24px;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: #151629;
+
+    @include laptop {
+      font-size: 40px;
+    }
+  }
+
+  &__slider {
+    position: relative;
+    overflow: hidden;
+    border-radius: 40px;
+
+    @include laptop {
+      border-radius: 20px;
+    }
+
+    & .swiper {
+      &-pagination {
+        left: 0;
+        right: 0;
+        bottom: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        padding: 0 74px;
+        box-sizing: border-box;
+        pointer-events: none;
+
+        @include laptop {
+          bottom: 10px;
+          padding: 0 36px;
+        }
+
+        @include tablet {
+          bottom: 36px;
+        }
+
+        @include mobile {
+          justify-content: center;
+        }
+
+        &-bullet {
+          width: 6px;
+          height: 6px;
+          margin: 0 !important;
+          background-color: #ffffff;
+          opacity: 1;
+
+          &-active {
+            width: 10px;
+            height: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  &__callback {
+    position: absolute;
+    top: 36px;
+    right: 36px;
+    z-index: 99;
+    display: block;
+    max-width: 424px;
+    width: 100%;
+    padding: 36px 36px 27px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #ffffff;
+
+    @include laptop {
+      right: 24px;
+      max-width: 340px;
+      padding: 36px 24px 36px;
+    }
+
+    @include tablet {
+      position: relative;
+      top: auto;
+      right: auto;
+      max-width: calc(100% - 24px);
+      margin: -24px auto 0;
+      box-shadow: 0 0 20px rgba($color: #000000, $alpha: 0.1);
+    }
+
+    &-title {
+      margin: 0 0 36px;
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 80%;
+      text-transform: uppercase;
+      color: #000;
+    }
+
+    &-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      &-input {
+        display: inline-block;
+        width: 100%;
+        padding: 13px 20px;
+        box-sizing: border-box;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #000;
+        border: none;
+        border-radius: 40px;
+        outline-color: #0a23a0;
+        background-color: #f4f4f5;
+      }
+
+      &-button {
+        display: inline-block;
+        width: 100%;
+        margin: 32px 0 0;
+        padding: 13px 20px;
+        box-sizing: border-box;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #fff;
+        border: 1px solid #0a23a0;
+        border-radius: 50px;
+        background-color: #0a23a0;
+        cursor: pointer;
+      }
+    }
+
+    &-offer {
+      margin: 10px 0 0;
+
+      &-button {
+        display: inline-block;
+        width: 100%;
+        padding: 13px 20px;
+        box-sizing: border-box;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #0a23a0;
+        border: 1px solid #0a23a0;
+        border-radius: 50px;
+        background-color: #ffffff;
+      }
+    }
+  }
+
+  &__slide {
+    position: relative;
+    overflow: hidden;
+    border-radius: 40px;
+
+    @include laptop {
+      border-radius: 20px;
+    }
+
+    &-photo {
+      position: absolute;
+      z-index: 1;
+      inset: 0;
+      margin: 0;
+
+      &-image {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &-content {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 18px;
+      min-height: 462px;
+      padding: 60px 48px;
+      padding-right: 504px;
+      box-sizing: border-box;
+
+      @include laptop {
+        padding: 48px 24px;
+        padding-right: 388px;
+      }
+
+      @include tablet {
+        padding: 48px 24px 60px;
+      }
+
+      &-icon {
+        margin: 0;
+
+        &-image {
+          display: block;
+          max-width: 100%;
+          height: auto;
+        }
+      }
+
+      &-text {
+        display: block;
+        max-width: 694px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+        color: #fff;
+      }
+    }
+  }
+}

@@ -107,3 +107,19 @@ aboutVideoItemEls.forEach((aboutVideoItemEl) => {
     }
   });
 });
+
+
+// project-banner
+
+const projectBannerSwiperEl = document.querySelector('.project-banner .swiper');
+
+if (projectBannerSwiperEl) {
+  const swiper = new Swiper(projectBannerSwiperEl, {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+}

@@ -16,6 +16,27 @@ if (burgerButton && headerMainDialog) {
   });
 }
 
+// header dialog
+
+const headerDialogBasket = document.querySelector('.header__dialog-basket');
+
+if (headerDialogBasket) {
+  headerDialogBasket.addEventListener('click', (event) => {
+    const isLayout = event.target === event.currentTarget;
+    if (isLayout) event.currentTarget.classList.remove('active');
+  });
+}
+
+const dialogBasketTogglerButtons = document.querySelectorAll('.dialog-basket-toggler');
+
+dialogBasketTogglerButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    if (headerDialogBasket) headerDialogBasket.classList.add('active');
+  });
+});
+
+// gallery
+
 const gallerySlideEls = document.querySelectorAll('.gallery__slide');
 
 gallerySlideEls.forEach((gallerySlideEl) => {

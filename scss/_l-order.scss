@@ -15,6 +15,7 @@
   }
 
   &__main {
+    position: relative;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -27,6 +28,14 @@
 
   &__info {
     flex: 0 0 842px;
+
+    @include desktop {
+      flex: 0 0 calc(100% - 40px - 400px);
+    }
+
+    @include laptop {
+      flex: 1 1 100%;
+    }
 
     &-title {
       margin: 0 0 12px;
@@ -301,9 +310,13 @@
   }
 
   &__details {
+    position: absolute;
+    top: 0;
+    right: 0;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
+    max-width: 447px;
     margin: 42px 0;
     padding: 20px;
     box-sizing: border-box;
@@ -312,11 +325,13 @@
     background: #fff;
 
     @include desktop {
-      flex: 0 0 400px;
+      max-width: 400px;
     }
 
     @include laptop {
+      position: static;
       flex: 0 1 768px;
+      max-width: none;
     }
 
     &-promocode {

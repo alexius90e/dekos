@@ -6669,6 +6669,7 @@ textarea {
   margin: 0 auto;
 }
 .order__main {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6690,6 +6691,20 @@ textarea {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 842px;
           flex: 0 0 842px;
+}
+@media (max-width: 1400px) {
+  .order__info {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(100% - 40px - 400px);
+            flex: 0 0 calc(100% - 40px - 400px);
+  }
+}
+@media (max-width: 1024px) {
+  .order__info {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
 }
 .order__info-title {
   margin: 0 0 12px;
@@ -7028,6 +7043,9 @@ textarea {
   }
 }
 .order__details {
+  position: absolute;
+  top: 0;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7036,6 +7054,7 @@ textarea {
           justify-content: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  max-width: 447px;
   margin: 42px 0;
   padding: 20px;
   -webkit-box-sizing: border-box;
@@ -7047,16 +7066,16 @@ textarea {
 }
 @media (max-width: 1400px) {
   .order__details {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 400px;
-            flex: 0 0 400px;
+    max-width: 400px;
   }
 }
 @media (max-width: 1024px) {
   .order__details {
+    position: static;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 768px;
             flex: 0 1 768px;
+    max-width: none;
   }
 }
 .order__details-promocode {
@@ -7683,6 +7702,11 @@ textarea {
     border-radius: 20px;
   }
 }
+@media (max-width: 576px) {
+  .project-banner__slider {
+    padding-bottom: 10px;
+  }
+}
 .project-banner__slider .swiper-pagination {
   left: 0;
   right: 0;
@@ -7767,7 +7791,7 @@ textarea {
   margin: 0 0 36px;
   font-weight: 800;
   font-size: 30px;
-  line-height: 80%;
+  line-height: 125%;
   text-transform: uppercase;
   color: #000;
 }

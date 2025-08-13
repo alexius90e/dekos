@@ -155,3 +155,18 @@ examplesSlideEls.forEach((examplesSlideEl) => {
     }
   });
 });
+
+// calculator
+
+const calculatorEl = document.querySelector('.calculator');
+
+if (calculatorEl) {
+  calculatorEl.addEventListener('click', (event) => {
+    const isCalculateBtn = event.target.classList.contains('calculator__main-controls-calculate');
+
+    if (isCalculateBtn) {
+      event.target.disabled = true;
+      event.currentTarget.classList.add('active');
+    }
+  });
+}

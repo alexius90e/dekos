@@ -35,6 +35,23 @@ dialogBasketTogglerButtons.forEach((button) => {
   });
 });
 
+const headerDialogPopular = document.querySelector('.header__dialog-popular');
+
+if (headerDialogPopular) {
+  headerDialogPopular.addEventListener('click', (event) => {
+    const isLayout = event.target === event.currentTarget;
+    if (isLayout) event.currentTarget.classList.remove('active');
+  });
+}
+
+const dialogPopularTogglerButtons = document.querySelectorAll('.dialog-popular-toggler');
+
+dialogPopularTogglerButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    if (headerDialogPopular) headerDialogPopular.classList.add('active');
+  });
+});
+
 // gallery
 
 const gallerySlideEls = document.querySelectorAll('.gallery__slide');

@@ -18,10 +18,14 @@ if (burgerButton && headerMainDialog) {
 
 // header dialog
 
-const headerDialogBasket = document.querySelector('.header__dialog-basket');
+const dialogBasket = document.querySelector('.header__dialog-basket');
+const dialogPopular = document.querySelector('.header__dialog-popular');
+const dialogThanks = document.querySelector('.header__dialog-thanks');
+const dialogOrder = document.querySelector('.header__dialog-order');
+const dialogOffer = document.querySelector('.header__dialog-offer');
 
-if (headerDialogBasket) {
-  headerDialogBasket.addEventListener('click', (event) => {
+if (dialogBasket) {
+  dialogBasket.addEventListener('click', (event) => {
     const isLayout = event.target === event.currentTarget;
     if (isLayout) event.currentTarget.classList.remove('active');
   });
@@ -31,14 +35,12 @@ const dialogBasketTogglerButtons = document.querySelectorAll('.dialog-basket-tog
 
 dialogBasketTogglerButtons.forEach((button) => {
   button.addEventListener('click', () => {
-    if (headerDialogBasket) headerDialogBasket.classList.add('active');
+    if (dialogBasket) dialogBasket.classList.add('active');
   });
 });
 
-const headerDialogPopular = document.querySelector('.header__dialog-popular');
-
-if (headerDialogPopular) {
-  headerDialogPopular.addEventListener('click', (event) => {
+if (dialogPopular) {
+  dialogPopular.addEventListener('click', (event) => {
     const isLayout = event.target === event.currentTarget;
     if (isLayout) event.currentTarget.classList.remove('active');
   });
@@ -48,7 +50,56 @@ const dialogPopularTogglerButtons = document.querySelectorAll('.dialog-popular-t
 
 dialogPopularTogglerButtons.forEach((button) => {
   button.addEventListener('click', () => {
-    if (headerDialogPopular) headerDialogPopular.classList.add('active');
+    if (dialogPopular) dialogPopular.classList.add('active');
+  });
+});
+
+if (dialogThanks) {
+  dialogThanks.addEventListener('click', (event) => {
+    const isLayout = event.target === event.currentTarget;
+    const isCloseBtn = event.target.classList.contains('header__dialog-thanks-close-button');
+    if (isLayout || isCloseBtn) event.currentTarget.classList.remove('active');
+  });
+}
+
+if (dialogOrder) {
+  dialogOrder.addEventListener('click', (event) => {
+    const isLayout = event.target === event.currentTarget;
+    if (isLayout) event.currentTarget.classList.remove('active');
+  });
+
+  const dialogOrderForm = dialogOrder.querySelector('.header__dialog-order-form');
+
+  if (dialogOrderForm) {
+    dialogOrderForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (dialogOrder) dialogOrder.classList.remove('active');
+      if (dialogThanks) dialogThanks.classList.add('active');
+    });
+  }
+}
+
+const dialogOrderTogglerButtons = document.querySelectorAll('.dialog-order-toggler');
+
+dialogOrderTogglerButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    if (dialogBasket) dialogBasket.classList.remove('active');
+    if (dialogOrder) dialogOrder.classList.add('active');
+  });
+});
+
+if (dialogOffer) {
+  dialogOffer.addEventListener('click', (event) => {
+    const isLayout = event.target === event.currentTarget;
+    if (isLayout) event.currentTarget.classList.remove('active');
+  });
+}
+
+const dialogOfferTogglerButtons = document.querySelectorAll('.dialog-offer-toggler');
+
+dialogOfferTogglerButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    if (dialogOffer) dialogOffer.classList.add('active');
   });
 });
 

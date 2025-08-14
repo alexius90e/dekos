@@ -295,7 +295,9 @@
                 </ul>
 
                 <div class="header__dialog-basket-order">
-                  <button class="header__dialog-basket-order-button">Оформить</button>
+                  <button class="header__dialog-basket-order-button dialog-order-toggler">
+                    Оформить
+                  </button>
                 </div>
               </div>
             </div>
@@ -351,6 +353,147 @@
                     ПОСМОТРЕТЬ ТОВАРЫ В КОРЗИНЕ
                   </a>
                 </div>
+              </div>
+            </div>
+
+            <div class="header__dialog-order">
+              <div class="header__dialog-order-body">
+                <div class="header__dialog-order-title">оформить заказ</div>
+
+                <form class="header__dialog-order-form">
+                  <label class="header__dialog-order-form-control">
+                    <input
+                      class="header__dialog-order-form-control-input"
+                      type="text"
+                      name="name"
+                      placeholder="Имя Фамилия"
+                      required
+                    />
+                  </label>
+
+                  <label class="header__dialog-order-form-control">
+                    <input
+                      class="header__dialog-order-form-control-input"
+                      type="tel"
+                      name="phone"
+                      placeholder="Телефон"
+                      required
+                    />
+                  </label>
+
+                  <label class="header__dialog-order-form-control">
+                    <input
+                      class="header__dialog-order-form-control-input"
+                      type="email"
+                      name="email"
+                      placeholder="E-mail"
+                      required
+                    />
+                  </label>
+
+                  <label class="header__dialog-order-form-checkbox">
+                    <input
+                      class="header__dialog-order-form-checkbox-input"
+                      type="checkbox"
+                      name="agreement"
+                      required
+                    />
+                    <span class="header__dialog-order-form-checkbox-text">
+                      согласия на обработку персональных данных.
+                    </span>
+                  </label>
+
+                  <div class="header__dialog-order-form-submit">
+                    <button class="header__dialog-order-form-submit-button">Оставить заявку</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="header__dialog-thanks">
+              <div class="header__dialog-thanks-body">
+                <div class="header__dialog-thanks-title">оформить заказ</div>
+
+                <figure class="header__dialog-thanks-icon">
+                  <img
+                    class="header__dialog-thanks-icon-image"
+                    src="./assets/dialog/bookmark-done.png"
+                    alt="image"
+                  />
+                </figure>
+
+                <div class="header__dialog-thanks-description">
+                  Спасибо, мы свяжемся с вами в ближайшее время
+                </div>
+
+                <div class="header__dialog-thanks-close">
+                  <button class="header__dialog-thanks-close-button">Закрыть</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="header__dialog-offer">
+              <div class="header__dialog-offer-body">
+                <div class="header__dialog-offer-title">оформить заказ</div>
+
+                <form class="header__dialog-offer-form">
+                  <label class="header__dialog-offer-form-control">
+                    <input
+                      class="header__dialog-offer-form-control-input"
+                      type="text"
+                      name="name"
+                      placeholder="Имя Фамилия"
+                      required
+                    />
+                  </label>
+
+                  <label class="header__dialog-offer-form-control">
+                    <input
+                      class="header__dialog-offer-form-control-input"
+                      type="tel"
+                      name="phone"
+                      placeholder="Телефон"
+                      required
+                    />
+                  </label>
+
+                  <label class="header__dialog-offer-form-control">
+                    <input
+                      class="header__dialog-offer-form-control-input"
+                      type="email"
+                      name="email"
+                      placeholder="E-mail"
+                      required
+                    />
+                  </label>
+
+                  <label
+                    class="header__dialog-offer-form-control header__dialog-offer-form-control_volume"
+                  >
+                    <input
+                      class="header__dialog-offer-form-control-input"
+                      type="text"
+                      name="volume"
+                      placeholder="Объём заказа"
+                      required
+                    />
+                    <span class="header__dialog-offer-form-control-text">m2</span>
+                  </label>
+
+                  <label class="header__dialog-offer-form-control">
+                    <input
+                      class="header__dialog-offer-form-control-input"
+                      type="text"
+                      name="inn"
+                      placeholder="ИНН"
+                      required
+                    />
+                  </label>
+
+                  <div class="header__dialog-offer-form-submit">
+                    <button class="header__dialog-offer-form-submit-button">Оставить заявку</button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>

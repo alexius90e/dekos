@@ -1044,7 +1044,7 @@ textarea {
           justify-content: center;
   gap: 10px;
   width: 100%;
-  padding: 12px 24px;
+  padding: 14px 24px 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-weight: 600;
@@ -1084,7 +1084,7 @@ textarea {
   display: block;
   position: fixed;
   inset: 0;
-  z-index: 10;
+  z-index: 9999;
   background-color: rgba(0, 0, 0, 0);
   -webkit-transition: background-color ease-out 0.2s;
   transition: background-color ease-out 0.2s;
@@ -1096,7 +1096,7 @@ textarea {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 11;
+  z-index: 99999;
   max-width: 360px;
   max-height: calc(100dvh - 40px);
   width: 100%;
@@ -1231,7 +1231,7 @@ textarea {
           justify-content: center;
   gap: 10px;
   width: 100%;
-  padding: 12px 24px;
+  padding: 14px 24px 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-weight: 600;
@@ -1258,6 +1258,421 @@ textarea {
   width: 20px;
   aspect-ratio: 1/1;
   background: url(../assets/icons/cart.svg);
+}
+.header__dialog-order {
+  overflow: hidden;
+  pointer-events: none;
+}
+.header__dialog-order.active {
+  pointer-events: all;
+}
+.header__dialog-order::after {
+  content: "";
+  display: block;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: background-color ease-out 0.2s;
+  transition: background-color ease-out 0.2s;
+}
+.header__dialog-order.active::after {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.header__dialog-order-body {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99999;
+  max-width: 360px;
+  max-height: calc(100dvh - 40px);
+  width: 100%;
+  padding: 24px 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  -webkit-transform: translateY(-120dvh);
+          transform: translateY(-120dvh);
+  -webkit-transition: -webkit-transform ease-out 0.4s;
+  transition: -webkit-transform ease-out 0.4s;
+  transition: transform ease-out 0.4s;
+  transition: transform ease-out 0.4s, -webkit-transform ease-out 0.4s;
+}
+.header__dialog-order.active .header__dialog-order-body {
+  -webkit-transform: translateY(0dvh);
+          transform: translateY(0dvh);
+}
+.header__dialog-order-title {
+  margin: 0 0 29px;
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #000;
+}
+.header__dialog-order-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+.header__dialog-order-form-control-input {
+  display: block;
+  width: 100%;
+  padding: 12px 26px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 201%;
+  color: #000;
+  border: none;
+  border-radius: 64px;
+  outline-color: #0a23a0;
+  background-color: #f4f5f7;
+}
+.header__dialog-order-form-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 0 8px;
+  margin: 15px 0 31px;
+  cursor: pointer;
+}
+.header__dialog-order-form-checkbox::before {
+  content: "";
+  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  height: 21px;
+  width: 21px;
+  margin: 1px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  border-radius: 6px;
+  background-color: #f4f5f7;
+  -webkit-transition-property: border-color, background-color, background-image;
+  transition-property: border-color, background-color, background-image;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  will-change: border-color, background-color, background-image;
+  cursor: pointer;
+}
+.header__dialog-order-form-checkbox:has(.header__dialog-order-form-checkbox-input:checked)::before {
+  background-color: #0a23a0;
+}
+.header__dialog-order-form-checkbox:has(.header__dialog-order-form-checkbox-input:checked)::before {
+  border-color: #0a23a0;
+  background: url(../assets/icons/check-mark.svg) center/12px no-repeat;
+  background-color: #0a23a0;
+}
+.header__dialog-order-form-checkbox-input {
+  display: none;
+}
+.header__dialog-order-form-checkbox-text {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+  color: #000;
+}
+.header__dialog-order-form-submit-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 14px 24px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  background-color: #0a23a0;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  cursor: pointer;
+}
+.header__dialog-order-form-submit-button:hover {
+  background-color: #151629;
+}
+.header__dialog-thanks {
+  overflow: hidden;
+  pointer-events: none;
+}
+.header__dialog-thanks.active {
+  pointer-events: all;
+}
+.header__dialog-thanks::after {
+  content: "";
+  display: block;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: background-color ease-out 0.2s;
+  transition: background-color ease-out 0.2s;
+}
+.header__dialog-thanks.active::after {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.header__dialog-thanks-body {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99999;
+  max-width: 360px;
+  max-height: calc(100dvh - 40px);
+  width: 100%;
+  padding: 24px 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  -webkit-transform: translateY(-120dvh);
+          transform: translateY(-120dvh);
+  -webkit-transition: -webkit-transform ease-out 0.4s;
+  transition: -webkit-transform ease-out 0.4s;
+  transition: transform ease-out 0.4s;
+  transition: transform ease-out 0.4s, -webkit-transform ease-out 0.4s;
+}
+.header__dialog-thanks.active .header__dialog-thanks-body {
+  -webkit-transform: translateY(0dvh);
+          transform: translateY(0dvh);
+}
+.header__dialog-thanks-title {
+  margin: 0 0 28px;
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #000;
+}
+.header__dialog-thanks-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 3px;
+}
+.header__dialog-thanks-icon-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.header__dialog-thanks-description {
+  margin: 0 0 29px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  color: #000;
+}
+.header__dialog-thanks-close-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 14px 24px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  background-color: #0a23a0;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  cursor: pointer;
+}
+.header__dialog-thanks-close-button:hover {
+  background-color: #151629;
+}
+.header__dialog-offer {
+  overflow: hidden;
+  pointer-events: none;
+}
+.header__dialog-offer.active {
+  pointer-events: all;
+}
+.header__dialog-offer::after {
+  content: "";
+  display: block;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: background-color ease-out 0.2s;
+  transition: background-color ease-out 0.2s;
+}
+.header__dialog-offer.active::after {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.header__dialog-offer-body {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99999;
+  max-width: 360px;
+  max-height: calc(100dvh - 40px);
+  width: 100%;
+  padding: 24px 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  -webkit-transform: translateY(-120dvh);
+          transform: translateY(-120dvh);
+  -webkit-transition: -webkit-transform ease-out 0.4s;
+  transition: -webkit-transform ease-out 0.4s;
+  transition: transform ease-out 0.4s;
+  transition: transform ease-out 0.4s, -webkit-transform ease-out 0.4s;
+}
+.header__dialog-offer.active .header__dialog-offer-body {
+  -webkit-transform: translateY(0dvh);
+          transform: translateY(0dvh);
+}
+.header__dialog-offer-title {
+  margin: 0 0 29px;
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #000;
+}
+.header__dialog-offer-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+.header__dialog-offer-form-control {
+  position: relative;
+}
+.header__dialog-offer-form-control_volume {
+  margin-top: 27px;
+}
+.header__dialog-offer-form-control-input {
+  display: block;
+  width: 100%;
+  padding: 12px 64px 15px 26px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 201%;
+  color: #000;
+  border: none;
+  border-radius: 64px;
+  outline-color: #0a23a0;
+  background-color: #f4f5f7;
+}
+.header__dialog-offer-form-control-text {
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 201%;
+  color: #000;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.header__dialog-offer-form-submit {
+  margin: 12px 0 0;
+}
+.header__dialog-offer-form-submit-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 14px 24px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  background-color: #0a23a0;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  cursor: pointer;
+}
+.header__dialog-offer-form-submit-button:hover {
+  background-color: #151629;
 }
 
 .first-screen {
